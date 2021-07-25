@@ -1,0 +1,19 @@
+{
+    "name": "games.grumpybear.fmod.utility",
+    "version": "0.0.1",
+    "displayName": "FMOD Utility",
+    "description": "Utilities for integrating FMOD",
+    "unity": "2021.1",
+    "unityRelease": "7f1",
+    "license": "Apache-2.0",
+    "dependencies": {
+   },
+   "hideInEditor": false,
+   "keywords": [
+    ],
+    "author": {
+      "name": "Martin Parm",
+      "email": "parmus@gmail.com"
+    }
+  }
+  
