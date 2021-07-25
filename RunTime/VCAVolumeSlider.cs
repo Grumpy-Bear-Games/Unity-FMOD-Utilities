@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 namespace Games.GrumpyBear.FMOD.Utilities
 {
+    [AddComponentMenu("Grumpy Bear Games/FMOD Utilities/VCA Volume Slider")]
     [RequireComponent(typeof(Slider))]
     public class VCAVolumeSlider : MonoBehaviour
     {
