@@ -1,6 +1,6 @@
 {
-    "name": "Games.GrumpyBear.FMOD.Utility",
-    "rootNamespace": "Games.GrumpyBear.FMOD.Utility",
+    "name": "Games.GrumpyBear.FMOD.Utilities",
+    "rootNamespace": "Games.GrumpyBear.FMOD.Utilities",
     "references": [
         "GUID:0c752da273b17c547ae705acf0f2adf2"
     ],

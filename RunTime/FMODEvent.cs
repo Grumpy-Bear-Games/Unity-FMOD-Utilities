@@ -1,9 +1,9 @@
 ﻿// ReSharper disable MemberCanBePrivate.Global
 using UnityEngine;
 
-namespace Games.GrumpyBear.FMOD.Utility
+namespace Games.GrumpyBear.FMOD.Utilities
 {
-    [CreateAssetMenu(fileName = "FMOD Event", menuName = "Grumpy Bear Games/FMOD Utility/FMOD Event")]
+    [CreateAssetMenu(fileName = "FMOD Event", menuName = "Grumpy Bear Games/FMOD Utilities/FMOD Event")]
     public class FMODEvent : ScriptableObject
     {
         [SerializeField][FMODUnity.EventRef] internal string _fmodEvent;

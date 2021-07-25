@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-namespace Games.GrumpyBear.FMOD.Utility
+namespace Games.GrumpyBear.FMOD.Utilities
 {
-    [CreateAssetMenu(menuName = "Grumpy Bear Games/FMOD Utility/VCA Volume", fileName = "VCA Volume")]
+    [CreateAssetMenu(menuName = "Grumpy Bear Games/FMOD Utilities/VCA Volume", fileName = "VCA Volume")]
     public sealed class VCAVolume: ScriptableObject
     {
         [SerializeField] private string _vcaPath = "vca:/";

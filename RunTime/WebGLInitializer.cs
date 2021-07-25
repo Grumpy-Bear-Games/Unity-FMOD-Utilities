@@ -1,11 +1,11 @@
-using FMOD;
 using System.Collections;
+using FMOD;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Games.GrumpyBear.FMOD.Utility
+namespace Games.GrumpyBear.FMOD.Utilities
 {
     public class WebGLInitializer : MonoBehaviour
     {

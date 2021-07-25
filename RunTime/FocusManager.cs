@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Games.GrumpyBear.FMOD.Utility
+namespace Games.GrumpyBear.FMOD.Utilities
 {
     public class FocusManager : MonoBehaviour
     {

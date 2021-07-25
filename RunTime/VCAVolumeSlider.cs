@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Games.GrumpyBear.FMOD.Utility
+namespace Games.GrumpyBear.FMOD.Utilities
 {
     [RequireComponent(typeof(Slider))]
     public class VCAVolumeSlider : MonoBehaviour

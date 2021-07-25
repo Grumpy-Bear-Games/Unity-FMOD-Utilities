@@ -1,7 +1,7 @@
 {
-    "name": "games.grumpybear.fmod.utility",
+    "name": "games.grumpybear.fmod.utilities",
     "version": "0.0.1",
-    "displayName": "FMOD Utility",
+    "displayName": "FMOD Utilities",
     "description": "Utilities for integrating FMOD",
     "unity": "2021.1",
     "unityRelease": "7f1",
