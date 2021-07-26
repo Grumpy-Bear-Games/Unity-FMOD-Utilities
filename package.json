@@ -6,7 +6,10 @@
   "unity": "2021.1",
   "unityRelease": "7f1",
   "license": "Apache-2.0",
-  "dependencies": {},
+  "repository": {
+    "url": "https://github.com/Grumpy-Bear-Games/Unity-FMOD-Utilities.git",
+    "type": "git"
+  },
   "samples": [
     {
       "displayName": "Example Options Dialog",
@@ -15,7 +18,10 @@
     }
   ],
   "hideInEditor": false,
-  "keywords": [],
+  "keywords": [
+    "audio",
+    "fmod"    
+  ],
   "author": {
     "name": "Martin Parm",
     "email": "parmus@gmail.com"
