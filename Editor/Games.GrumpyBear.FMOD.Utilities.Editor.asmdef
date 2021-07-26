@@ -1,0 +1,18 @@
+{
+    "name": "Games.GrumpyBear.FMOD.Utilities.Editor",
+    "rootNamespace": "Games.GrumpyBear.FMOD.Utilities.Editor",
+    "references": [
+        "GUID:0c752da273b17c547ae705acf0f2adf2",
+        "GUID:aab3caaf43456d6449a3e035348ff798",
+        "GUID:995a602722e56f8469a270933eb97950"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
