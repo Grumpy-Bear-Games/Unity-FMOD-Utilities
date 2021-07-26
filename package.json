@@ -1,19 +1,23 @@
 {
-    "name": "games.grumpybear.fmod.utilities",
-    "version": "0.0.1",
-    "displayName": "FMOD Utilities",
-    "description": "Utilities for integrating FMOD",
-    "unity": "2021.1",
-    "unityRelease": "7f1",
-    "license": "Apache-2.0",
-    "dependencies": {
-   },
-   "hideInEditor": false,
-   "keywords": [
-    ],
-    "author": {
-      "name": "Martin Parm",
-      "email": "parmus@gmail.com"
+  "name": "games.grumpybear.fmod.utilities",
+  "version": "0.0.1",
+  "displayName": "FMOD Utilities",
+  "description": "Utilities for integrating FMOD",
+  "unity": "2021.1",
+  "unityRelease": "7f1",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "samples": [
+    {
+      "displayName": "Example Options Dialog",
+      "description": "Demonstrates how to hook up a VCAVolume to a UI Slider",
+      "path": "Samples~/Example options Dialog"
     }
+  ],
+  "hideInEditor": false,
+  "keywords": [],
+  "author": {
+    "name": "Martin Parm",
+    "email": "parmus@gmail.com"
   }
-  
+}
