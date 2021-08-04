@@ -1,10 +1,11 @@
-﻿using UnityEditor;
+﻿using System;
+using UnityEditor;
 using UnityEngine;
 
 namespace Games.GrumpyBear.FMOD.Utilities.Editor
 {
-    [CustomEditor(typeof(VCAVolume))]
-    public class VCAVolumeEditor : UnityEditor.Editor
+    [CustomEditor(typeof(VCAVolumePreference))]
+    public class VCAVolumePreferenceEditor : UnityEditor.Editor
     {
         private SerializedProperty _vcaPathProp;
         private SerializedProperty _playerPrefsKeyProp;
@@ -19,6 +20,7 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
 
         private void UpdateVCA()
         {
+            if (EditorApplication.isPlayingOrWillChangePlaymode) return;
             try
             {
                 var vca = FMODUnity.RuntimeManager.GetVCA(_vcaPathProp.stringValue);
@@ -32,9 +34,11 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
 
         public override void OnInspectorGUI()
         {
-            
-            if (!_validVCA) EditorGUILayout.HelpBox("Invalid VCA", MessageType.Error);
-            
+            if (!EditorApplication.isPlayingOrWillChangePlaymode)
+            {
+                if (!_validVCA) EditorGUILayout.HelpBox("Invalid VCA", MessageType.Error);
+            }
+
             EditorGUI.BeginChangeCheck();
             base.OnInspectorGUI();
             if (EditorGUI.EndChangeCheck()) UpdateVCA();
@@ -51,7 +55,7 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
             
                 
             EditorGUILayout.LabelField("Current Value", $"{PlayerPrefs.GetFloat(key)}", guiStyle);
-            if (GUILayout.Button("Delete")) PlayerPrefs.DeleteKey(key);
+            if (GUILayout.Button("Delete")) (target as VolumePreference)?.ClearPref();
         }
     }
 }

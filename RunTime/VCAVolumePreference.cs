@@ -2,8 +2,8 @@
 
 namespace Games.GrumpyBear.FMOD.Utilities
 {
-    [CreateAssetMenu(menuName = "Grumpy Bear Games/FMOD Utilities/VCA Volume", fileName = "VCA Volume")]
-    public sealed class VCAVolume: ScriptableObject
+    [CreateAssetMenu(menuName = "Grumpy Bear Games/FMOD Utilities/VCA Volume Preference", fileName = "VCA Volume Preference")]
+    public sealed class VCAVolumePreference: VolumePreference
     {
         [SerializeField] private string _vcaPath = "vca:/";
         [SerializeField] private string _playerPrefsKey = "Settings/Audio/SFXVolume";
@@ -12,7 +12,8 @@ namespace Games.GrumpyBear.FMOD.Utilities
 
         private global::FMOD.Studio.VCA _vca;
 
-        public float Volume
+        public override string PlayerPrefsKey => _playerPrefsKey;
+        public override float Volume
         {
             get
             {
@@ -24,6 +25,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
                 EnsureValid();
                 _vca.setVolume(value);
                 PlayerPrefs.SetFloat(_playerPrefsKey, value);
+                PlayerPrefs.Save();
             }
         }
         
@@ -31,10 +33,12 @@ namespace Games.GrumpyBear.FMOD.Utilities
         {
             if (_vca.isValid()) return;
             _vca = FMODUnity.RuntimeManager.GetVCA(_vcaPath);
+            Debug.Log($"{name} Initializing {Volume}");
             _vca.setVolume(Volume);
         }
 
-        public void Initialize() => EnsureValid();
+        public override void Initialize() => EnsureValid();
+
 
 #if UNITY_EDITOR
         private void OnEnable()
@@ -53,4 +57,5 @@ namespace Games.GrumpyBear.FMOD.Utilities
             if (_initializeOnEnable) EnsureValid();
         }
 #endif
-    }}
+    }
+}
