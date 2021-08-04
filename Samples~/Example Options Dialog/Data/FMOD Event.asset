@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a503be77d305134da83a0423fc6a2da, type: 3}
-  m_Name: VCA Volume
+  m_Script: {fileID: 11500000, guid: 7e85a06dd6cc8a0459ac05f16ce2de4e, type: 3}
+  m_Name: FMOD Event
   m_EditorClassIdentifier: 
-  _vcaPath: vca:/sfx
-  _playerPrefsKey: Settings/Audio/SFXVolume
-  _defaultVolume: 0.8
-  _initializeOnEnable: 0
+  _fmodEvent: event:/ui_okay
