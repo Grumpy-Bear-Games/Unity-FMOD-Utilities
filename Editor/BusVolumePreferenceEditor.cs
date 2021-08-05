@@ -7,13 +7,13 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
     public class BusVolumePreferenceEditor : UnityEditor.Editor
     {
         private SerializedProperty _busPathProp;
-        private SerializedProperty _playerPrefsKeyProp;
         private bool _validBus;
+        private BusVolumePreference _busVolumePreference;
 
         private void OnEnable()
         {
             _busPathProp = serializedObject.FindProperty("_busPath");
-            _playerPrefsKeyProp = serializedObject.FindProperty("_playerPrefsKey");
+            _busVolumePreference = target as BusVolumePreference;
             UpdateBus();
         }
 
@@ -42,19 +42,15 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
             base.OnInspectorGUI();
             if (EditorGUI.EndChangeCheck()) UpdateBus();
 
-            var key = _playerPrefsKeyProp.stringValue;
-
-            if (!PlayerPrefs.HasKey(key)) return;
-
             GUILayout.Space(20);
 
-            EditorGUILayout.HelpBox("Remember: This value is saved in PlayerPrefs; not in this object", MessageType.Info);
-            var guiStyle = GUI.skin.label;
-            guiStyle.alignment = TextAnchor.MiddleRight;
+            var oldValue = _busVolumePreference.Volume;
+            var newValue = EditorGUILayout.Slider("Volume", oldValue, 0f, 1f);
+            if (!Mathf.Approximately(oldValue, newValue)) PlayerPrefs.SetFloat(_busVolumePreference.PlayerPrefsKey, newValue);
             
-                
-            EditorGUILayout.LabelField("Current Value", $"{PlayerPrefs.GetFloat(key)}", guiStyle);
-            if (GUILayout.Button("Delete"))  (target as VolumePreference)?.ClearPref();
+            if (!PlayerPrefs.HasKey(_busVolumePreference.PlayerPrefsKey)) return;
+            EditorGUILayout.HelpBox("Remember: This value is saved in PlayerPrefs; not in this object", MessageType.Info);
+            if (GUILayout.Button("Delete")) _busVolumePreference.ClearPlayerPrefs();
         }
     }
 }

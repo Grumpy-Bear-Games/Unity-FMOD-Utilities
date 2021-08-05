@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 
 namespace Games.GrumpyBear.FMOD.Utilities.Editor
@@ -8,13 +7,13 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
     public class VCAVolumePreferenceEditor : UnityEditor.Editor
     {
         private SerializedProperty _vcaPathProp;
-        private SerializedProperty _playerPrefsKeyProp;
         private bool _validVCA;
+        private VCAVolumePreference _vcaVolumePreference;
 
         private void OnEnable()
         {
             _vcaPathProp = serializedObject.FindProperty("_vcaPath");
-            _playerPrefsKeyProp = serializedObject.FindProperty("_playerPrefsKey");
+            _vcaVolumePreference = target as VCAVolumePreference;
             UpdateVCA();
         }
 
@@ -43,19 +42,15 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
             base.OnInspectorGUI();
             if (EditorGUI.EndChangeCheck()) UpdateVCA();
 
-            var key = _playerPrefsKeyProp.stringValue;
-
-            if (!PlayerPrefs.HasKey(key)) return;
-
             GUILayout.Space(20);
 
-            EditorGUILayout.HelpBox("Remember: This value is saved in PlayerPrefs; not in this object", MessageType.Info);
-            var guiStyle = GUI.skin.label;
-            guiStyle.alignment = TextAnchor.MiddleRight;
+            var oldValue = _vcaVolumePreference.Volume;
+            var newValue = EditorGUILayout.Slider("Volume", oldValue, 0f, 1f);
+            if (!Mathf.Approximately(oldValue, newValue)) PlayerPrefs.SetFloat(_vcaVolumePreference.PlayerPrefsKey, newValue);
             
-                
-            EditorGUILayout.LabelField("Current Value", $"{PlayerPrefs.GetFloat(key)}", guiStyle);
-            if (GUILayout.Button("Delete")) (target as VolumePreference)?.ClearPref();
+            if (!PlayerPrefs.HasKey(_vcaVolumePreference.PlayerPrefsKey)) return;
+            EditorGUILayout.HelpBox("Remember: This value is saved in PlayerPrefs; not in this object", MessageType.Info);
+            if (GUILayout.Button("Delete")) _vcaVolumePreference.ClearPlayerPrefs();
         }
     }
 }
