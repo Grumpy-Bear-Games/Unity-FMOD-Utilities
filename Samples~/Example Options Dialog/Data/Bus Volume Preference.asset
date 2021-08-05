@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1a6ff7146549f3b8495ae5ed7b0630, type: 3}
   m_Name: Bus Volume Preference
   m_EditorClassIdentifier: 
+  _initializeOnEnable: 0
+  _defaultVolume: 0.8
   _busPath: bus:/
   _playerPrefsKey: Settings/Audio/MasterVolume
-  _defaultVolume: 0.8
-  _initializeOnEnable: 0
