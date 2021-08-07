@@ -16,6 +16,11 @@
     }
   ],
   "build": {
+    "sitemap":{
+      "baseUrl": "https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/",
+      "priority": 0.1,
+      "changefreq": "weekly"
+    },    
     "content": [
       {
         "files": [
