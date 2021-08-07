@@ -1,4 +1,9 @@
 {
+  "sitemap": {
+    "baseUrl": "https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/",
+    "changefreq": "weekly",
+    "priority": 0.1
+  },
   "homepages": [],
   "source_base_path": "/github/workspace/docfx_project~",
   "xrefmap": "xrefmap.yml",
@@ -18,7 +23,7 @@
       "output": {
         ".html": {
           "relative_path": "changelog/CHANGELOG.html",
-          "hash": "WL7EEdUYXCVGfbapoXoDew=="
+          "hash": "sF2JkZ1Mk5P0B08Mf2A53g=="
         }
       },
       "is_incremental": false,
