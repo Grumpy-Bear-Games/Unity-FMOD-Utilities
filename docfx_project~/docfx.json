@@ -1,0 +1,109 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "RunTime/**.cs",
+            "Editor/**.cs"
+          ],
+          "src": ".."
+        }
+      ],
+      "dest": "api",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "toc.yml",
+          "*.md"
+        ]
+      },
+      {
+        "src": "api",
+        "files": [
+          "**.yml",
+          "index.md"
+        ],
+        "dest": "api"
+      },
+      {
+        "src": "../Documentation~",
+        "files": [
+          "**.md",
+          "toc.yml"
+        ],
+        "dest": "manual"
+      },
+      {
+        "src": "..",
+        "files": [
+          "CHANGELOG.md"
+        ],
+        "dest": "changelog"
+      },
+      {
+        "src": "..",
+        "files": [
+          "LICENSE.md"
+        ],
+        "dest": "license"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      },
+      {
+        "files": [
+          "favicon.ico"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "intermediateFolder": "_docfx_cache~",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default"
+    ],
+    "fileMetadata": {
+      "assemblies": {
+        "api/**.yml": ["Games.GrumpyBear.FMOD.Utilities"],
+        "api/**.Editor.*.yml": ["Games.GrumpyBear.FMOD.Utilities.Editor"]
+      }
+    },
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": true,
+    "disableGitFeatures": true,
+    "globalMetadata": {
+      "_appTitle": "Games.GrumpyBear.FMOD.Utilities",
+      "_appFooter": "Games.GrumpyBear.FMOD.Utilities",
+      "_appLogoPath": "images/logo.png",
+      "_appFaviconPath" : "images/favicon.ico",
+      "_enableSearch": true,
+      "_enableNewTab": true,
+      "_disableBreadcrumb": false
+    }
+  }
+}

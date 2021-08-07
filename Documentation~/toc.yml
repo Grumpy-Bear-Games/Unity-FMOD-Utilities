@@ -1,0 +1,4 @@
+- name: Guides
+  items:
+  - name: Installation
+    href: installation.md
