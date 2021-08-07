@@ -1,0 +1,322 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace/docfx_project~",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "changelog/CHANGELOG.html",
+          "hash": "WL7EEdUYXCVGfbapoXoDew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../Documentation~/installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/installation.html",
+          "hash": "vIz0srngxaj2NShbrdUVWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "../Documentation~/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "uKERL8JVKDGtVxtoHk8G7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/LICENSE.html",
+          "hash": "Pr1ZQrkPwpQ777Q7K6HUqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.BusVolumePreference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.BusVolumePreference.html",
+          "hash": "mc4CcyGcMTOiS1WJb9JI2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.BusVolumePreferenceEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.BusVolumePreferenceEditor.html",
+          "hash": "9IWc0oEiuOsPLVlvAri1zQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.VCAVolumePreferenceEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.VCAVolumePreferenceEditor.html",
+          "hash": "irlftFrcq6bwHVjRFHtyHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.html",
+          "hash": "PAZppSQDS8jdVRyvI5SCxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.FMODEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.FMODEvent.html",
+          "hash": "OgtoE4/np2P+KXhrQR4yVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.FocusManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html",
+          "hash": "qhQugBv8nEcfnQuCpUsQmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference.html",
+          "hash": "8jju2Z3jPvrcOV/WipPu0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VolumePreference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VolumePreference.html",
+          "hash": "mppqeakhOTwnhjyJhjm66g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VolumePreferenceSlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VolumePreferenceSlider.html",
+          "hash": "RQCsYw6kI9SAm2dSsQJUwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html",
+          "hash": "1jQfQMPW27hpsZ1vsUVLWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.html",
+          "hash": "nTEc3cfhkJxOjSHkde4Q5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "xI1WVHbJXylWwXuYsKyBDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "NqEaoETnfHmDWZybSYek8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "LTuS33FSiWSgRT6qr7JXdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "uYvUvRTudHV3xHNhHg7bFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 5,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 11,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
