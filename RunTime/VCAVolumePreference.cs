@@ -2,6 +2,9 @@
 
 namespace Games.GrumpyBear.FMOD.Utilities
 {
+    /// <summary>
+    /// Persistent volume configuration for an FMOD VCA
+    /// </summary>
     [CreateAssetMenu(menuName = "Grumpy Bear Games/FMOD Utilities/VCA Volume Preference", fileName = "VCA Volume Preference")]
     public sealed class VCAVolumePreference: VolumePreference
     {
@@ -10,7 +13,25 @@ namespace Games.GrumpyBear.FMOD.Utilities
 
         private global::FMOD.Studio.VCA _vca;
 
+        /// <summary>
+        /// Path to the VCA.
+        /// Notice that changing this during playtime will not reset the previous VCA's volume. 
+        /// </summary>
+        public string VCAPath
+        {
+            get => _vcaPath;
+            set
+            {
+                _vcaPath = value;
+                _vca.clearHandle();
+                EnsureValid();
+            }
+        }
+        
+        /// <inheritdoc />
         public override string PlayerPrefsKey => _playerPrefsKey;
+        
+        /// <inheritdoc />
         public override float Volume
         {
             get
@@ -27,7 +48,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
             }
         }
 
-        protected override void EnsureValid()
+        private protected override void EnsureValid()
         {
             #if UNITY_EDITOR
             if (UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode) return;
@@ -35,7 +56,6 @@ namespace Games.GrumpyBear.FMOD.Utilities
             
             if (_vca.isValid()) return;
             _vca = FMODUnity.RuntimeManager.GetVCA(_vcaPath);
-            Debug.Log($"{name} Initializing {Volume}");
             _vca.setVolume(Volume);
         }
     }

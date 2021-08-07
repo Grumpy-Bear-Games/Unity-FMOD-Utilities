@@ -2,6 +2,11 @@
 
 namespace Games.GrumpyBear.FMOD.Utilities
 {
+    /// <summary>
+    /// Focus manager, which suspends and resumes FMOD on unfocus and focus. Simply add this
+    /// class to a GameObject in your scene. 
+    /// This is particularly useful for WebGL.
+    /// </summary>
     [AddComponentMenu("Grumpy Bear Games/FMOD Utilities/Focus Manager")]
     public class FocusManager : MonoBehaviour
     {
