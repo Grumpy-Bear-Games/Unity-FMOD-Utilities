@@ -5,7 +5,7 @@
     "priority": 0.1
   },
   "homepages": [],
-  "source_base_path": "/github/workspace/docfx_project~",
+  "source_base_path": "/github/workspace/Packages/games.grumpybear.fmod.utilities/docfx_project~",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "LTuS33FSiWSgRT6qr7JXdA=="
+          "hash": "G6Yo9iOEZ1SENmuMTI6Vfg=="
         }
       },
       "is_incremental": false,

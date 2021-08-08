@@ -67,7 +67,7 @@
   "index.html": {
     "href": "index.html",
     "title": "FMOD Utility | Games.GrumpyBear.FMOD.Utilities",
-    "keywords": "FMOD Utility"
+    "keywords": "FMOD Utility This package contains a collection of utilities for working with FMOD's Unity Integration . Get started by checking out Installation"
   },
   "license/LICENSE.html": {
     "href": "license/LICENSE.html",
