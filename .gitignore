@@ -83,3 +83,7 @@ Assets/Samples.meta
 # Log-files
 fmod.log
 fmod_editor.log
+
+
+### DocFX cache 
+/_docfx_cache~
