@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="Workspace" id="{8d3b9bc9-0195-4f7e-8c69-61257cf76e66}">
+		<property name="builtBanksOutputDirectory">
+			<value>../../Packages/games.grumpybear.fmod.utilities/Samples~/Example Options Dialog/Data/FMOD Banks</value>
+		</property>
+		<relationship name="masterEventFolder">
+			<destination>{ced73053-8f3e-4674-938b-2be655f9729f}</destination>
+		</relationship>
+		<relationship name="masterTagFolder">
+			<destination>{7d95e302-441d-4411-9721-697c6e77afa8}</destination>
+		</relationship>
+		<relationship name="masterEffectPresetFolder">
+			<destination>{5e68b21a-e930-4c66-a0e5-62f01126c757}</destination>
+		</relationship>
+		<relationship name="masterParameterPresetFolder">
+			<destination>{ba7c4c45-02d8-4d80-899b-9bbfdbec64ac}</destination>
+		</relationship>
+		<relationship name="masterBankFolder">
+			<destination>{bd2f8e05-8f01-41ed-b441-67e870c1c6a2}</destination>
+		</relationship>
+		<relationship name="masterSandboxFolder">
+			<destination>{ab8fdaf9-080f-4128-a5d6-787a17a8209b}</destination>
+		</relationship>
+		<relationship name="masterAssetFolder">
+			<destination>{fb40f98c-a63d-4d0d-ab48-269d5123d246}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{4fe90499-7461-440b-bf03-21a5d8969eb7}</destination>
+		</relationship>
+		<relationship name="profilerSessionFolder">
+			<destination>{1a63b994-878d-4994-b493-2c86186d5747}</destination>
+		</relationship>
+		<relationship name="platforms">
+			<destination>{0729698a-15f6-4a03-a040-3ae4db8f7ef7}</destination>
+		</relationship>
+	</object>
+</objects>
