@@ -8,6 +8,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
     /// This is particularly useful for WebGL.
     /// </summary>
     [AddComponentMenu("Grumpy Bear Games/FMOD Utilities/FMOD Focus Manager")]
+    [HelpURL("https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html")]
     public class FocusManager : MonoBehaviour
     {
         [Tooltip("Scope of this manager")]

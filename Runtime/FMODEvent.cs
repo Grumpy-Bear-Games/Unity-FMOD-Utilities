@@ -9,6 +9,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
     /// one-shot events directly in the editor, e.g. in a <c>UnityEvent</c>, and across scenes.
     /// </summary>
     [CreateAssetMenu(fileName = "FMOD Event", menuName = "Grumpy Bear Games/FMOD Utilities/FMOD Event")]
+    [HelpURL("https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.FMODEvent.html")]
     public class FMODEvent : ScriptableObject
     {
         [SerializeField][FMODUnity.EventRef] internal string _fmodEvent;

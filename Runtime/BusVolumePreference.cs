@@ -7,6 +7,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
     /// See <see href="xref:manual.volumecontrol.md">Persistent Volume Control</see> for usage.
     /// </summary>
     [CreateAssetMenu(menuName = "Grumpy Bear Games/FMOD Utilities/Bus Volume Preference", fileName = "Bus Volume Preference")]
+    [HelpURL("https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.BusVolumePreference.html")]
     public sealed class BusVolumePreference: VolumePreference
     {
         [SerializeField] private string _busPath = "bus:/";

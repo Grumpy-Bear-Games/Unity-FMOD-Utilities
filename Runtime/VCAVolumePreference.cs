@@ -7,6 +7,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
     /// See <see href="xref:manual.volumecontrol.md">Persistent Volume Control</see> for usage. 
     /// </summary>
     [CreateAssetMenu(menuName = "Grumpy Bear Games/FMOD Utilities/VCA Volume Preference", fileName = "VCA Volume Preference")]
+    [HelpURL("https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference.html")]
     public sealed class VCAVolumePreference: VolumePreference
     {
         [SerializeField] private string _vcaPath = "vca:/";

@@ -9,6 +9,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
     /// See <see href="xref:manual.volumecontrol.md">Persistent Volume Control</see> for usage.
     /// </summary>
     [AddComponentMenu("Grumpy Bear Games/FMOD Utilities/Volume Preference Slider")]
+    [HelpURL("https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.VolumePreferenceSlider.html")]
     [RequireComponent(typeof(Slider))]
     public class VolumePreferenceSlider : MonoBehaviour
     {

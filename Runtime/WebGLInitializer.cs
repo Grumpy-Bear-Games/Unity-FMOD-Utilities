@@ -18,6 +18,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
     /// and <see href="https://fmod.com/resources/documentation-unity?version=2.01&amp;page=examples-async-loading.html">Scripting Examples | Asynchronous Loading</see>
     /// </remarks>
     [AddComponentMenu("Grumpy Bear Games/FMOD Utilities/WebGL FMOD Initializer")]
+    [HelpURL("https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html")]
     public class WebGLInitializer : MonoBehaviour
     {
         [Tooltip("Name of the first scene to load once FMOD has been initialized")]
