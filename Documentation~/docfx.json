@@ -18,7 +18,6 @@
   "build": {
     "globalMetadata": {
       "_appTitle": "Games.GrumpyBear.FMOD.Utilities",
-      "_appFooter": "Games.GrumpyBear.FMOD.Utilities",
       "_appLogoPath": "images/logo.png",
       "_appFaviconPath" : "images/favicon.ico",
       "_enableSearch": true,
