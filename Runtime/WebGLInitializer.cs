@@ -60,7 +60,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
             _volumePreferencesToInitialize.ForEach(v => v.Initialize());
             _asyncSceneLoading.allowSceneActivation = true;
         }
-        
+
         #if UNITY_EDITOR
         [UnityEditor.MenuItem("GameObject/Grumpy Bear Games/FMOD Utilities/WebGL Initializer", false, 10)]
         private static void CreateGameObject()
@@ -71,7 +71,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
             UnityEditor.Selection.activeObject = go;
         }
 
-        private void ResetVolumePreferences()
+        public void ResetVolumePreferences()
         {
             _volumePreferencesToInitialize.Clear();
             var guids = UnityEditor.AssetDatabase.FindAssets("t:"+ nameof(VolumePreference));

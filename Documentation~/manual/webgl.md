@@ -24,12 +24,11 @@ Usage:
 1. Set @"Games.GrumpyBear.FMOD.Utilities.VolumePreference.InitializeOnEnable" to `false` on
    all @"Games.GrumpyBear.FMOD.Utilities.VolumePreference" instances. 
 2. Create an empty scene with a camera, a canvas and a button. Give the button a label like "Start Game" or similar.
-3. Create a new GameObject with @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer", or simply attach it to an existing GameObject.
-4. In the editor, configure @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer" by connecting it to the button, specifying the
-   "real" first scene to load, and connecting all @"Games.GrumpyBear.FMOD.Utilities.VolumePreference" instances to 
-   @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.VolumePreferencesToInitialize".
-5. (Optionally) Style and decorate the scene any way you want.
-6. Save this scene and make it the first scene in the [build settings](https://docs.unity3d.com/Manual/BuildSettings.html).
+3. Create a new GameObject with @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer".
+4. In the editor, configure @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer". This is easiest done by clicking the
+   "Fix All Problems" button.
+6. (Optionally) Style and decorate the scene any way you want.
+7. Save this scene and make it the first scene in the [build settings](https://docs.unity3d.com/Manual/BuildSettings.html).
 
 When started, @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer" will load the first scene asynchronously and wait for
 the FMOD banks to load. The button is kept hidden until both scene and FMOD banks are ready. When the player clicks the button,
