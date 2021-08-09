@@ -1,6 +1,8 @@
-- name: Guides
+- name: Manual
   items:
   - name: About FMOD Utilities
     href: ~/index.md
   - name: Using FMOD with WebGL
     href: webgl.md
+  - name: Persistent Volume Control
+    href: volumecontrol.md

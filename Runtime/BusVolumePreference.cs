@@ -3,7 +3,8 @@
 namespace Games.GrumpyBear.FMOD.Utilities
 {
     /// <summary>
-    /// Persistent volume configuration for an FMOD bus
+    /// Persistent volume configuration for an FMOD bus.
+    /// See <see href="xref:manual.volumecontrol.md">Persistent Volume Control</see> for usage.
     /// </summary>
     [CreateAssetMenu(menuName = "Grumpy Bear Games/FMOD Utilities/Bus Volume Preference", fileName = "Bus Volume Preference")]
     public sealed class BusVolumePreference: VolumePreference

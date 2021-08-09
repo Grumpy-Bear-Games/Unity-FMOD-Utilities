@@ -3,7 +3,8 @@
 namespace Games.GrumpyBear.FMOD.Utilities
 {
     /// <summary>
-    /// Persistent volume configuration for an FMOD VCA
+    /// Persistent volume configuration for an FMOD VCA.
+    /// See <see href="xref:manual.volumecontrol.md">Persistent Volume Control</see> for usage. 
     /// </summary>
     [CreateAssetMenu(menuName = "Grumpy Bear Games/FMOD Utilities/VCA Volume Preference", fileName = "VCA Volume Preference")]
     public sealed class VCAVolumePreference: VolumePreference

@@ -21,8 +21,7 @@ This package provides two classes for helping with implementing this right.
 @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer" handles initialization of FMOD and bank loading.
 
 Usage:
-1. Set @"Games.GrumpyBear.FMOD.Utilities.VolumePreference.InitializeOnEnable" to `false` on
-   all @"Games.GrumpyBear.FMOD.Utilities.VolumePreference" instances. 
+1. Set `niItializeOnEnable` to `false` on all @"Games.GrumpyBear.FMOD.Utilities.VolumePreference" instances in the editor. 
 2. Create an empty scene with a camera, a canvas and a button. Give the button a label like "Start Game" or similar.
 3. Create a new GameObject with @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer".
 4. In the editor, configure @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer". This is easiest done by clicking the

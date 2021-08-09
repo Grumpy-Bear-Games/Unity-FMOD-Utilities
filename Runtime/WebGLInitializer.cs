@@ -10,7 +10,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
 {
     /// <summary>
     /// Initialize FMOD properly for use with WebGL.
-    /// See  <see href="xref:manual.webgl.md">Using FMOD with WebGL</see> for usage.
+    /// See <see href="xref:manual.webgl.md">Using FMOD with WebGL</see> for usage.
     /// </summary>
     /// <remarks>
     /// This class was inspired by

@@ -4,8 +4,9 @@ using UnityEngine.UI;
 namespace Games.GrumpyBear.FMOD.Utilities
 {
     /// <summary>
-    /// Bind a UnityEngine.UI.Slider to a <see cref="VolumePreference"/> to make a volume slider.
-    /// Add this class to the GameObject containing the Slider.
+    /// Bind a <c>UnityEngine.UI.Slider</c> to a <see cref="VolumePreference"/> to make a volume slider.
+    /// Add this class to the GameObject containing the <c>Slider</c>.
+    /// See <see href="xref:manual.volumecontrol.md">Persistent Volume Control</see> for usage.
     /// </summary>
     [AddComponentMenu("Grumpy Bear Games/FMOD Utilities/Volume Preference Slider")]
     [RequireComponent(typeof(Slider))]
