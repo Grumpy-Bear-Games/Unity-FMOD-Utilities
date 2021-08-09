@@ -1,5 +1,7 @@
 # FMOD Utilities for Unity
 
+![GitHub](https://img.shields.io/github/license/Grumpy-Bear-Games/Unity-FMOD-Utilities?style=plastic) ![GitHub package.json version](https://img.shields.io/github/package-json/v/Grumpy-Bear-Games/Unity-FMOD-Utilities?style=plastic)
+
 See main documentation on https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/
 
 
