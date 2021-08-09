@@ -96,6 +96,25 @@ references:
   isSpec: "True"
   fullName: Games.GrumpyBear.FMOD.Utilities.Editor.VCAVolumePreferenceEditor.OnInspectorGUI
   nameWithType: VCAVolumePreferenceEditor.OnInspectorGUI
+- uid: Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor
+  name: WebGLInitializerEditor
+  href: api/Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.html
+  commentId: T:Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor
+  fullName: Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor
+  nameWithType: WebGLInitializerEditor
+- uid: Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.html#Games_GrumpyBear_FMOD_Utilities_Editor_WebGLInitializerEditor_OnInspectorGUI
+  commentId: M:Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.OnInspectorGUI
+  fullName: Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.OnInspectorGUI()
+  nameWithType: WebGLInitializerEditor.OnInspectorGUI()
+- uid: Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.html#Games_GrumpyBear_FMOD_Utilities_Editor_WebGLInitializerEditor_OnInspectorGUI_
+  commentId: Overload:Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.OnInspectorGUI
+  isSpec: "True"
+  fullName: Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.OnInspectorGUI
+  nameWithType: WebGLInitializerEditor.OnInspectorGUI
 - uid: Games.GrumpyBear.FMOD.Utilities.FMODEvent
   name: FMODEvent
   href: api/Games.GrumpyBear.FMOD.Utilities.FMODEvent.html

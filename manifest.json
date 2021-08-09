@@ -79,11 +79,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.html",
+          "hash": "AkkhL1fKZQGNStz6aWTqFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.yml",
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.html",
-          "hash": "PAZppSQDS8jdVRyvI5SCxA=="
+          "hash": "RevC4AT60JwDDJNxi2+0hg=="
         }
       },
       "is_incremental": false,
@@ -179,7 +191,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "NqEaoETnfHmDWZybSYek8w=="
+          "hash": "p0tDVO1NB25a4aSb5msDrw=="
         }
       },
       "is_incremental": false,
@@ -237,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/webgl.html",
-          "hash": "KdHRnWmCr1OhR7kjTuBBWw=="
+          "hash": "gLhHKjcGlQHmwc2fZGEAmw=="
         }
       },
       "is_incremental": false,
@@ -276,7 +288,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 11,
+          "total_file_count": 12,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
