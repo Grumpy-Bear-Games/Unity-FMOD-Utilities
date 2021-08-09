@@ -23,7 +23,7 @@
       "output": {
         ".html": {
           "relative_path": "changelog/CHANGELOG.html",
-          "hash": "n3C1cEU13qna6QLhjOBQZw=="
+          "hash": "6/mU587z3I0BtV51xbtgkw=="
         }
       },
       "is_incremental": false,
@@ -47,7 +47,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.BusVolumePreference.html",
-          "hash": "cYQXOb57R5+aSfwZhUOGpw=="
+          "hash": "Rykew+2WzYU6CDbBBPLf0Q=="
         }
       },
       "is_incremental": false,
@@ -131,7 +131,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference.html",
-          "hash": "Rok62n+90Yo+TtSEw1CZPQ=="
+          "hash": "vME7zjOUBDlH17NqR5fc5A=="
         }
       },
       "is_incremental": false,
@@ -155,7 +155,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VolumePreferenceSlider.html",
-          "hash": "3L/91Lvy90Vp4brjTFmtAg=="
+          "hash": "AwTUxzI9m5AaygRo1yYruQ=="
         }
       },
       "is_incremental": false,
@@ -167,7 +167,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html",
-          "hash": "NOXewrAzgQVHwpeow2Ax+g=="
+          "hash": "pOy/QF6i0jqbysxn5JHMEQ=="
         }
       },
       "is_incremental": false,
@@ -179,7 +179,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.html",
-          "hash": "HxLtNn5/ktP9K1OJX832Gw=="
+          "hash": "t6uorSVBY6NDcp5xpEpbCg=="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "Kfuyli2rtFtjt7TZPVtQ1w=="
+          "hash": "HL+vUG71HDW50JN/ZjSZlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/volumecontrol.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/volumecontrol.html",
+          "hash": "NAdrJkbX+zbYLtITFGUuxA=="
         }
       },
       "is_incremental": false,
@@ -249,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/webgl.html",
-          "hash": "gLhHKjcGlQHmwc2fZGEAmw=="
+          "hash": "ABxeMzG7dXgWJy9K2Oph4w=="
         }
       },
       "is_incremental": false,
@@ -282,7 +294,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

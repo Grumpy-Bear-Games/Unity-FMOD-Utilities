@@ -312,6 +312,9 @@ references:
   commentId: T:Games.GrumpyBear.FMOD.Utilities.WebGLInitializer
   fullName: Games.GrumpyBear.FMOD.Utilities.WebGLInitializer
   nameWithType: WebGLInitializer
+- uid: manual.volumecontrol.md
+  name: Persistent Volume Control
+  href: manual/volumecontrol.html
 - uid: manual.webgl.md
   name: Using FMOD with WebGL
   href: manual/webgl.html
