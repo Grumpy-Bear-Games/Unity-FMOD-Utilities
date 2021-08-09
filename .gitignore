@@ -1,5 +1,6 @@
-/Editor/obj
-/Editor/obj.meta
-/RunTime/obj
-/RunTime/obj.meta
+## DocFX artifacts
+obj
+obj.meta
 /_docfx_cache~
+/_site~
+/Documentation~/api

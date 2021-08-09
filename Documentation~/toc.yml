@@ -1,4 +1,8 @@
-- name: Guides
-  items:
-  - name: Installation
-    href: installation.md
+- name: Manual
+  href: manual/
+- name: Scripting API
+  href: api/
+- name: Changelog
+  homepage: ../CHANGELOG.md
+- name: License
+  homepage: ../LICENSE.md

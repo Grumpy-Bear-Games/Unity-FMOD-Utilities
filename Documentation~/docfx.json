@@ -4,7 +4,7 @@
       "src": [
         {
           "files": [
-            "RunTime/**.cs",
+            "Runtime/**.cs",
             "Editor/**.cs"
           ],
           "src": ".."
@@ -16,11 +16,14 @@
     }
   ],
   "build": {
-    "sitemap":{
-      "baseUrl": "https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/",
-      "priority": 0.1,
-      "changefreq": "weekly"
-    },    
+    "globalMetadata": {
+      "_appTitle": "Games.GrumpyBear.FMOD.Utilities",
+      "_appFooter": "Games.GrumpyBear.FMOD.Utilities",
+      "_appLogoPath": "images/logo.png",
+      "_appFaviconPath" : "images/favicon.ico",
+      "_enableSearch": true,
+      "_enableNewTab": true
+    },
     "content": [
       {
         "files": [
@@ -37,7 +40,7 @@
         "dest": "api"
       },
       {
-        "src": "../Documentation~",
+        "src": "manual",
         "files": [
           "**.md",
           "toc.yml"
@@ -82,7 +85,12 @@
         ]
       }
     ],
-    "dest": "_site",
+    "sitemap":{
+      "baseUrl": "https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/",
+      "priority": 0.1,
+      "changefreq": "weekly"
+    },
+    "dest": "../_site~",
     "intermediateFolder": "_docfx_cache~",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
@@ -96,19 +104,11 @@
       }
     },
     "postProcessors": [],
-    "markdownEngineName": "markdig",
     "noLangKeyword": false,
     "keepFileLink": false,
     "cleanupCacheHistory": true,
-    "disableGitFeatures": true,
-    "globalMetadata": {
-      "_appTitle": "Games.GrumpyBear.FMOD.Utilities",
-      "_appFooter": "Games.GrumpyBear.FMOD.Utilities",
-      "_appLogoPath": "images/logo.png",
-      "_appFaviconPath" : "images/favicon.ico",
-      "_enableSearch": true,
-      "_enableNewTab": true,
-      "_disableBreadcrumb": false
-    }
+    "disableGitFeatures": false,
+    "xref": [ "https://normanderwan.github.io/UnityXrefMaps/xrefmap.yml" ],
+    "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
   }
 }

@@ -8,10 +8,28 @@ namespace Games.GrumpyBear.FMOD.Utilities
     public abstract class VolumePreference: ScriptableObject
     {
         [Tooltip("Automatically initialize FMOD on enable.")]
-        [SerializeField] private protected bool _initializeOnEnable = true;
+        [SerializeField] private bool _initializeOnEnable = true;
         
         [Tooltip("The default volume set when PlayerPrefs is empty")]
-        [SerializeField][Range(0f, 1f)] private protected float _defaultVolume = 0.8f;
+        [SerializeField][Range(0f, 1f)] private float _defaultVolume = 0.8f;
+
+        /// <summary>
+        /// Controls whether underlying FMOD object should be automatically initialized on load.
+        /// Set this to <c>false</c> when using WebGL to avoid interacting with FMOD before it has
+        /// properly loaded. Set it to <c>true</c> on all other platforms.
+        /// When set to <c>false</c> initialization can be triggered in 2 ways:
+        /// - When something calls <see cref="Initialize"/> explicitly, e.g. <see cref="WebGLInitializer"/>
+        ///   (this is the easiest and preferred way).
+        /// - On getting or setting <see cref="Volume"/>
+        /// </summary>
+        /// <value>
+        /// Initialize underlying FMOD object and restore volume automatically on load. 
+        /// </value>
+        public bool InitializeOnEnable
+        {
+            get => _initializeOnEnable;
+            set => _initializeOnEnable = value;
+        }
 
         /// <value>
         /// The default volume set when PlayerPrefs is empty.
@@ -37,7 +55,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
         /// <summary>
         /// Initialize the underlying FMOD object.
         /// This method will be called in a number of situations:
-        /// - Automatically, when this ScriptableObject is loaded, if <see cref="_initializeOnEnable"/> is <c>true</c>
+        /// - Automatically, when this instance is loaded, if <see cref="InitializeOnEnable"/> is <c>true</c>
         /// - On getting or setting <see cref="Volume"/>
         /// - Explicitly When <see cref="Initialize"/> is called.
         /// </summary>
@@ -45,7 +63,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
         
         /// <summary>
         /// Explicitly initialize the volume from PlayerPrefs.
-        /// This will usually happen automatically when _initializeOnEnable is <c>true</c>,
+        /// This will usually happen automatically when <see cref="InitializeOnEnable"/> is <c>true</c>,
         /// but you can also call this method manually for more direct control.
         /// This is e.g. useful for WebGL, where you must wait until FMOD has been properly
         /// initialized before interacting with  
@@ -63,7 +81,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
             #else
             if (_initializeOnEnable) EnsureValid();
             #endif
-        }        
+        }
 
         /// <summary>
         /// Clear the volume setting stored in PlayerPrefs.

@@ -1,5 +1,5 @@
-﻿name: Build and public documentation
-on: 
+﻿name: Build and publish documentation
+on:
   push:
     branches:
       - master
@@ -16,14 +16,14 @@ jobs:
       - uses: nikeee/docfx-action@v1.0.0
         name: Build Documentation
         with:
-          args: docfx_project~/docfx.json
+          args: Documentation~/docfx.json
       - name: List files in the repository
         run: |
-          ls -R ${{ github.workspace }}/docfx_project~/_site
+          ls -R ${{ github.workspace }}/_site~
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ${{ github.workspace }}/docfx_project~/_site
+          publish_dir: ${{ github.workspace }}/_site~
           user_name: 'github-actions[bot]'
           user_email: 'parmus@gmail.com'

@@ -6,7 +6,9 @@
   "unity": "2021.1",
   "unityRelease": "7f1",
   "license": "Apache-2.0",
+  "licensesUrl": "https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/license/LICENSE.html",
   "documentationUrl": "https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/",
+  "changelogUrl": "https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/changelog/CHANGELOG.html",
   "repository": {
     "url": "https://github.com/Grumpy-Bear-Games/Unity-FMOD-Utilities.git",
     "type": "git"

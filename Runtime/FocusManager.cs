@@ -7,9 +7,17 @@ namespace Games.GrumpyBear.FMOD.Utilities
     /// class to a GameObject in your scene. 
     /// This is particularly useful for WebGL.
     /// </summary>
-    [AddComponentMenu("Grumpy Bear Games/FMOD Utilities/Focus Manager")]
+    [AddComponentMenu("Grumpy Bear Games/FMOD Utilities/FMOD Focus Manager")]
     public class FocusManager : MonoBehaviour
     {
+        [Tooltip("Scope of this manager")]
+        [SerializeField] private Scope _scope = Scope.Scene;
+
+        private void Awake()
+        {
+            if (_scope == Scope.Global) DontDestroyOnLoad(gameObject);
+        }
+
         private void OnApplicationFocus(bool hasFocus)
         {
             if (hasFocus)
@@ -27,5 +35,11 @@ namespace Games.GrumpyBear.FMOD.Utilities
             UnityEditor.Selection.activeObject = go;
         }
         #endif
+
+        private enum Scope
+        {
+            Scene,
+            Global
+        }
     }
 }

@@ -514,6 +514,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _firstScene: Example Options Dialog
   _startButton: {fileID: 637917492}
+  _volumePreferencesToInitialize:
+  - {fileID: 11400000, guid: e39d0294c1abb7a4ea50869ec84fc269, type: 2}
+  - {fileID: 11400000, guid: 27a6455b9dc68bf459a22842d632695c, type: 2}
 --- !u!114 &1571283809
 MonoBehaviour:
   m_ObjectHideFlags: 0

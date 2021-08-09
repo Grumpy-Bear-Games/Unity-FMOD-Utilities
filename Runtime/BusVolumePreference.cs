@@ -37,7 +37,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
             get
             {
                 EnsureValid();
-                return PlayerPrefs.GetFloat(_playerPrefsKey, _defaultVolume);
+                return PlayerPrefs.GetFloat(_playerPrefsKey, DefaultVolume);
             }
             set
             {
@@ -52,7 +52,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
         private protected override void EnsureValid()
         {
             #if UNITY_EDITOR
-            if (UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode) return;
+            if (!UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode) return;
             #endif
             
             if (_bus.isValid()) return;

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using FMOD;
 using UnityEngine;
 using UnityEngine.Assertions;
@@ -9,36 +10,24 @@ namespace Games.GrumpyBear.FMOD.Utilities
 {
     /// <summary>
     /// Initialize FMOD properly for use with WebGL.
-    /// <list type="number">
-    /// <item>
-    /// <description>Create an empty scene with a camera, a canvas and a button.</description>
-    /// </item>
-    /// <item>
-    /// <description>Create a new GameObject with <see cref="WebGLInitializer"/>, or simply attach it to an existing GameObject.</description>
-    /// </item>
-    /// <item>
-    /// <description>In the editor, configure <see cref="WebGLInitializer"/> by connecting it to the button and specifying the
-    /// "real" first scene to load.
-    /// </description>
-    /// </item>
-    /// <item>
-    /// <description>(Optionally) Style and decorate the scene any way you want.</description>
-    /// </item>
-    /// <item>
-    /// <description>Save this scene and make it the first scene in the build configuration.</description>
-    /// </item>
-    /// </list>
+    /// See  <see href="xref:manual.webgl.md">Using FMOD with WebGL</see> for usage.
     /// </summary>
     /// <remarks>
     /// This class was inspired by
     /// <see href="https://alessandrofama.com/tutorials/fmod-unity/fix-blocked-audio-browsers/">Fix blocked FMOD audio in Browsers</see>
     /// and <see href="https://fmod.com/resources/documentation-unity?version=2.01&amp;page=examples-async-loading.html">Scripting Examples | Asynchronous Loading</see>
     /// </remarks>
-    [AddComponentMenu("Grumpy Bear Games/FMOD Utilities/WebGL Initializer")]
+    [AddComponentMenu("Grumpy Bear Games/FMOD Utilities/WebGL FMOD Initializer")]
     public class WebGLInitializer : MonoBehaviour
     {
+        [Tooltip("Name of the first scene to load once FMOD has been initialized")]
         [SerializeField] private string _firstScene;
+        
+        [Tooltip("The Button which will provide the required explicit user interaction.")]
         [SerializeField] private Button _startButton;
+        
+        [Tooltip("VolumePreference instances to initialize once FMOD is ready.")]
+        [SerializeField] private List<VolumePreference> _volumePreferencesToInitialize = new List<VolumePreference>();
         
         private AsyncOperation _asyncSceneLoading;
 
@@ -68,6 +57,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
             Assert.AreEqual(result, RESULT.OK);
             result = FMODUnity.RuntimeManager.CoreSystem.mixerResume();
             Assert.AreEqual(result, RESULT.OK);
+            _volumePreferencesToInitialize.ForEach(v => v.Initialize());
             _asyncSceneLoading.allowSceneActivation = true;
         }
         
@@ -76,10 +66,21 @@ namespace Games.GrumpyBear.FMOD.Utilities
         private static void CreateGameObject()
         {
             var go = new GameObject("[WebGL Initializer]", typeof(WebGLInitializer));
+            go.GetComponent<WebGLInitializer>()?.ResetVolumePreferences();
             UnityEditor.Undo.RegisterCreatedObjectUndo(go, $"Create {go.name}");
             UnityEditor.Selection.activeObject = go;
         }
+
+        private void ResetVolumePreferences()
+        {
+            _volumePreferencesToInitialize.Clear();
+            var guids = UnityEditor.AssetDatabase.FindAssets("t:"+ nameof(VolumePreference));
+            foreach (var t in guids)
+            {
+                var path = UnityEditor.AssetDatabase.GUIDToAssetPath(t);
+                _volumePreferencesToInitialize.Add(UnityEditor.AssetDatabase.LoadAssetAtPath<VolumePreference>(path));
+            }
+        }
         #endif
-        
     }
 }
