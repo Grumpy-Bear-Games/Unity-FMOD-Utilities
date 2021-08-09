@@ -34,8 +34,7 @@
       {
         "src": "api",
         "files": [
-          "**.yml",
-          "index.md"
+          "**.yml"
         ],
         "dest": "api"
       },

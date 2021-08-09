@@ -6,3 +6,5 @@
     href: webgl.md
   - name: Persistent Volume Control
     href: volumecontrol.md
+  - name: Playing FMOD one-shot events
+    href: fmodevents.md
