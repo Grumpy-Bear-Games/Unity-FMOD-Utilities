@@ -88,7 +88,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">VolumePreference</span></div>
       <div class="level2"><a class="xref" href="Games.GrumpyBear.FMOD.Utilities.BusVolumePreference.html">BusVolumePreference</a></div>
       <div class="level2"><a class="xref" href="Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference.html">VCAVolumePreference</a></div>
@@ -121,8 +121,43 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
         <td><p>The default volume set when PlayerPrefs is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Games_GrumpyBear_FMOD_Utilities_VolumePreference_InitializeOnEnable_" data-uid="Games.GrumpyBear.FMOD.Utilities.VolumePreference.InitializeOnEnable*"></a>
+  <h4 id="Games_GrumpyBear_FMOD_Utilities_VolumePreference_InitializeOnEnable" data-uid="Games.GrumpyBear.FMOD.Utilities.VolumePreference.InitializeOnEnable">InitializeOnEnable</h4>
+  <div class="markdown level1 summary"><p>Controls whether underlying FMOD object should be automatically initialized on load.
+Set this to <code>false</code> when using WebGL to avoid interacting with FMOD before it has
+properly loaded. Set it to <code>true</code> on all other platforms.
+When set to <code>false</code> initialization can be triggered in 2 ways:</p>
+<ul>
+<li>When something calls <a class="xref" href="Games.GrumpyBear.FMOD.Utilities.VolumePreference.html#Games_GrumpyBear_FMOD_Utilities_VolumePreference_Initialize">Initialize()</a> explicitly, e.g. <a class="xref" href="Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html">WebGLInitializer</a>
+(this is the easiest and preferred way).</li>
+<li>On getting or setting <a class="xref" href="Games.GrumpyBear.FMOD.Utilities.VolumePreference.html#Games_GrumpyBear_FMOD_Utilities_VolumePreference_Volume">Volume</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InitializeOnEnable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Initialize underlying FMOD object and restore volume automatically on load. </p>
 </td>
       </tr>
     </tbody>
@@ -147,8 +182,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The PlayerPrefs key which the volume gets persisted under</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The PlayerPrefs key which the volume gets persisted under </p>
 </td>
       </tr>
     </tbody>
@@ -173,7 +208,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
         <td><p>The current volume.
 The range goes from 0 to 1.
 Notice that setting this will both set the volume and persist it to PlayerPrefs.</p>
@@ -199,10 +234,10 @@ Notice that setting this will both set the volume and persist it to PlayerPrefs.
   <a id="Games_GrumpyBear_FMOD_Utilities_VolumePreference_Initialize_" data-uid="Games.GrumpyBear.FMOD.Utilities.VolumePreference.Initialize*"></a>
   <h4 id="Games_GrumpyBear_FMOD_Utilities_VolumePreference_Initialize" data-uid="Games.GrumpyBear.FMOD.Utilities.VolumePreference.Initialize">Initialize()</h4>
   <div class="markdown level1 summary"><p>Explicitly initialize the volume from PlayerPrefs.
-This will usually happen automatically when _initializeOnEnable is <code>true</code>,
+This will usually happen automatically when <a class="xref" href="Games.GrumpyBear.FMOD.Utilities.VolumePreference.html#Games_GrumpyBear_FMOD_Utilities_VolumePreference_InitializeOnEnable">InitializeOnEnable</a> is <code>true</code>,
 but you can also call this method manually for more direct control.
 This is e.g. useful for WebGL, where you must wait until FMOD has been properly
-initialized before interacting with</p>
+initialized before interacting with  </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

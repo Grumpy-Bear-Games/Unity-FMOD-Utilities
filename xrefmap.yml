@@ -229,6 +229,19 @@ references:
   isSpec: "True"
   fullName: Games.GrumpyBear.FMOD.Utilities.VolumePreference.Initialize
   nameWithType: VolumePreference.Initialize
+- uid: Games.GrumpyBear.FMOD.Utilities.VolumePreference.InitializeOnEnable
+  name: InitializeOnEnable
+  href: api/Games.GrumpyBear.FMOD.Utilities.VolumePreference.html#Games_GrumpyBear_FMOD_Utilities_VolumePreference_InitializeOnEnable
+  commentId: P:Games.GrumpyBear.FMOD.Utilities.VolumePreference.InitializeOnEnable
+  fullName: Games.GrumpyBear.FMOD.Utilities.VolumePreference.InitializeOnEnable
+  nameWithType: VolumePreference.InitializeOnEnable
+- uid: Games.GrumpyBear.FMOD.Utilities.VolumePreference.InitializeOnEnable*
+  name: InitializeOnEnable
+  href: api/Games.GrumpyBear.FMOD.Utilities.VolumePreference.html#Games_GrumpyBear_FMOD_Utilities_VolumePreference_InitializeOnEnable_
+  commentId: Overload:Games.GrumpyBear.FMOD.Utilities.VolumePreference.InitializeOnEnable
+  isSpec: "True"
+  fullName: Games.GrumpyBear.FMOD.Utilities.VolumePreference.InitializeOnEnable
+  nameWithType: VolumePreference.InitializeOnEnable
 - uid: Games.GrumpyBear.FMOD.Utilities.VolumePreference.PlayerPrefsKey
   name: PlayerPrefsKey
   href: api/Games.GrumpyBear.FMOD.Utilities.VolumePreference.html#Games_GrumpyBear_FMOD_Utilities_VolumePreference_PlayerPrefsKey
@@ -280,3 +293,6 @@ references:
   commentId: T:Games.GrumpyBear.FMOD.Utilities.WebGLInitializer
   fullName: Games.GrumpyBear.FMOD.Utilities.WebGLInitializer
   nameWithType: WebGLInitializer
+- uid: manual.webgl.md
+  name: Using FMOD with WebGL
+  href: manual/webgl.html

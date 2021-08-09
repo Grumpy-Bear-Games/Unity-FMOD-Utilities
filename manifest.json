@@ -5,7 +5,7 @@
     "priority": 0.1
   },
   "homepages": [],
-  "source_base_path": "/github/workspace/Packages/games.grumpybear.fmod.utilities/docfx_project~",
+  "source_base_path": "/github/workspace/Documentation~",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -23,31 +23,7 @@
       "output": {
         ".html": {
           "relative_path": "changelog/CHANGELOG.html",
-          "hash": "sF2JkZ1Mk5P0B08Mf2A53g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "../Documentation~/installation.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/installation.html",
-          "hash": "vIz0srngxaj2NShbrdUVWg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "../Documentation~/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "manual/toc.html",
-          "hash": "uKERL8JVKDGtVxtoHk8G7g=="
+          "hash": "n3C1cEU13qna6QLhjOBQZw=="
         }
       },
       "is_incremental": false,
@@ -59,7 +35,7 @@
       "output": {
         ".html": {
           "relative_path": "license/LICENSE.html",
-          "hash": "Pr1ZQrkPwpQ777Q7K6HUqg=="
+          "hash": "mD4dxdSqHlQ6TtRcgk39pg=="
         }
       },
       "is_incremental": false,
@@ -71,7 +47,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.BusVolumePreference.html",
-          "hash": "mc4CcyGcMTOiS1WJb9JI2A=="
+          "hash": "cYQXOb57R5+aSfwZhUOGpw=="
         }
       },
       "is_incremental": false,
@@ -83,7 +59,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.BusVolumePreferenceEditor.html",
-          "hash": "9IWc0oEiuOsPLVlvAri1zQ=="
+          "hash": "lJbt3nXjIFZXG5Dx72SMvA=="
         }
       },
       "is_incremental": false,
@@ -95,7 +71,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.Editor.VCAVolumePreferenceEditor.html",
-          "hash": "irlftFrcq6bwHVjRFHtyHA=="
+          "hash": "km1YqcUHqcVonxoCex6IZA=="
         }
       },
       "is_incremental": false,
@@ -119,7 +95,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.FMODEvent.html",
-          "hash": "OgtoE4/np2P+KXhrQR4yVQ=="
+          "hash": "XFTT9MAtXKMQMYKt7VZnzA=="
         }
       },
       "is_incremental": false,
@@ -131,7 +107,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html",
-          "hash": "qhQugBv8nEcfnQuCpUsQmg=="
+          "hash": "Z3kgHSsbigHBX0jKe8dUzA=="
         }
       },
       "is_incremental": false,
@@ -143,7 +119,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference.html",
-          "hash": "8jju2Z3jPvrcOV/WipPu0Q=="
+          "hash": "Rok62n+90Yo+TtSEw1CZPQ=="
         }
       },
       "is_incremental": false,
@@ -155,7 +131,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VolumePreference.html",
-          "hash": "mppqeakhOTwnhjyJhjm66g=="
+          "hash": "iLItVx0R9/h0DOKoem9ukA=="
         }
       },
       "is_incremental": false,
@@ -167,7 +143,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VolumePreferenceSlider.html",
-          "hash": "RQCsYw6kI9SAm2dSsQJUwg=="
+          "hash": "3L/91Lvy90Vp4brjTFmtAg=="
         }
       },
       "is_incremental": false,
@@ -179,7 +155,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html",
-          "hash": "1jQfQMPW27hpsZ1vsUVLWw=="
+          "hash": "NOXewrAzgQVHwpeow2Ax+g=="
         }
       },
       "is_incremental": false,
@@ -191,19 +167,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.html",
-          "hash": "nTEc3cfhkJxOjSHkde4Q5g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/index.html",
-          "hash": "xI1WVHbJXylWwXuYsKyBDQ=="
+          "hash": "HxLtNn5/ktP9K1OJX832Gw=="
         }
       },
       "is_incremental": false,
@@ -249,7 +213,31 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "G6Yo9iOEZ1SENmuMTI6Vfg=="
+          "hash": "XsxxGtlqFrqgx+cX6DztGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "Kfuyli2rtFtjt7TZPVtQ1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/webgl.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/webgl.html",
+          "hash": "KdHRnWmCr1OhR7kjTuBBWw=="
         }
       },
       "is_incremental": false,
@@ -261,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "uYvUvRTudHV3xHNhHg7bFQ=="
+          "hash": "Ne1CgjF1APU0TPpwKWtkvw=="
         }
       },
       "is_incremental": false,
@@ -282,7 +270,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

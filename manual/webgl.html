@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Using FMOD with WebGL | Games.GrumpyBear.FMOD.Utilities </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Using FMOD with WebGL | Games.GrumpyBear.FMOD.Utilities ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="manual.webgl.md">
+<h1 id="using-fmod-with-webgl">Using FMOD with WebGL</h1>
+
+<p>Using FMOD with WebGL has some special requirements and limitations.</p>
+<ol>
+<li>FMOD must be initialized through an action, which comes from direct user input, e.g. the user 
+clicking a button.</li>
+<li>All FMOD banks must be loaded before interacting with them.</li>
+<li>FMOD should be suspended and resumed on focus events to prevent audio glitches.</li>
+</ol>
+<p>See more details in <a href="https://alessandrofama.com/tutorials/fmod-unity/fix-blocked-audio-browsers/">Fix blocked FMOD audio in Browsers</a> and
+<a href="&quot;https://fmod.com/resources/documentation-unity?version=2.01&amp;page=examples-async-loading.html">Scripting Examples | Asynchronous Loading</a></p>
+<p>This package provides two classes for helping with implementing this right.</p>
+<h2 id="gamesgrumpybearfmodutilitieswebglinitializer"><a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html">WebGLInitializer</a></h2>
+<p><a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html">WebGLInitializer</a> handles initialization of FMOD and bank loading.</p>
+<p>Usage:</p>
+<ol>
+<li>Set <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.VolumePreference.html#Games_GrumpyBear_FMOD_Utilities_VolumePreference_InitializeOnEnable">InitializeOnEnable</a> to <code>false</code> on
+all <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.VolumePreference.html">VolumePreference</a> instances. </li>
+<li>Create an empty scene with a camera, a canvas and a button. Give the button a label like &quot;Start Game&quot; or similar.</li>
+<li>Create a new GameObject with <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html">WebGLInitializer</a>, or simply attach it to an existing GameObject.</li>
+<li>In the editor, configure <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html">WebGLInitializer</a> by connecting it to the button, specifying the
+&quot;real&quot; first scene to load, and connecting all <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.VolumePreference.html">VolumePreference</a> instances to 
+@&quot;Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.VolumePreferencesToInitialize&quot;.</li>
+<li>(Optionally) Style and decorate the scene any way you want.</li>
+<li>Save this scene and make it the first scene in the <a href="https://docs.unity3d.com/Manual/BuildSettings.html">build settings</a>.</li>
+</ol>
+<p>When started, <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html">WebGLInitializer</a> will load the first scene asynchronously and wait for
+the FMOD banks to load. The button is kept hidden until both scene and FMOD banks are ready. When the player clicks the button,
+FMOD is initialized (thus fulfilling the requirement of direct under interaction), and switches to the real first scene.</p>
+<div class="IMPORTANT"><h5>Important</h5><p>Make sure to configure FMOD banks to load automatically under <code>Initialization -&gt; Load Banks</code> in the FMOD Settings (<code>FMOD -&gt; Edit Settings</code>)  </p>
+</div>
+<h2 id="gamesgrumpybearfmodutilitiesfocusmanager"><a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html">FocusManager</a></h2>
+<p>When a Unity application loses focus in WebGL, e.g. the user switches to a different tab, FMOD gets stuck playing the same sounds.
+<a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html">FocusManager</a> is class, which helps handle unfocus and focus events correctly by suspending and
+resuming FMOD. Simply add <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html">FocusManager</a> to a GameObject in your active scene.</p>
+<div class="TIP"><h5>Tip</h5><p>It&#39;s recommended to keep the <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html">FocusManager</a> in a global scene, if you&#39;re using a multi-scene setup.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Grumpy-Bear-Games/Unity-FMOD-Utilities/blob/master/Documentation~/manual/webgl.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Games.GrumpyBear.FMOD.Utilities
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
