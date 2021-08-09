@@ -312,6 +312,9 @@ references:
   commentId: T:Games.GrumpyBear.FMOD.Utilities.WebGLInitializer
   fullName: Games.GrumpyBear.FMOD.Utilities.WebGLInitializer
   nameWithType: WebGLInitializer
+- uid: manual.fmodevents.md
+  name: Playing FMOD one-shot events
+  href: manual/fmodevents.html
 - uid: manual.volumecontrol.md
   name: Persistent Volume Control
   href: manual/volumecontrol.html
