@@ -33,7 +33,7 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
             base.OnInspectorGUI();
 
             FixAllProblemsButton();
-            FinAllVolumePreferencesButton();
+            FindAllVolumePreferencesButton();
         }
 
         private void FixAllProblemsButton()
@@ -95,7 +95,7 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
             serializedObject.ApplyModifiedProperties();
         }
 
-        private void FinAllVolumePreferencesButton()
+        private void FindAllVolumePreferencesButton()
         {
             if (!GUILayout.Button("Find all VolumePreferences")) return;
             Undo.RecordObject(_webGLInitializer, "Find all VolumePreferences");
