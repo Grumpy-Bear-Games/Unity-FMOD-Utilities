@@ -3,8 +3,11 @@ using System.Text;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
+#if ! GRUMPYBEAR_LEVELMANAGEMENT
+using UnityEngine.SceneManagement;
+#endif
 
 namespace Games.GrumpyBear.FMOD.Utilities.Editor
 {
@@ -12,13 +15,21 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
     public class WebGLInitializerEditor : UnityEditor.Editor
     {
         private WebGLInitializer _webGLInitializer;
+        #if GRUMPYBEAR_LEVELMANAGEMENT
+        private SerializedProperty _firstSceneGroup;
+        #else
         private SerializedProperty _firstScene;
+        #endif
         private SerializedProperty _startButton;
 
         private void OnEnable()
         {
             _webGLInitializer = target as WebGLInitializer;
+            #if GRUMPYBEAR_LEVELMANAGEMENT
+            _firstSceneGroup = serializedObject.FindProperty("_firstSceneGroup");
+            #else
             _firstScene = serializedObject.FindProperty("_firstScene");
+            #endif
             _startButton = serializedObject.FindProperty("_startButton");
         }
 
@@ -41,14 +52,19 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
             var scene = _webGLInitializer.gameObject.scene;
 
             var buildIndexInCorrect = scene.buildIndex == 0;
-            var firstSceneIsSet = !string.IsNullOrEmpty(_firstScene.stringValue);
             var buttonIsSet = _startButton.objectReferenceValue != null;
-
+            #if GRUMPYBEAR_LEVELMANAGEMENT
+            if (buildIndexInCorrect && buttonIsSet) return;
+            #else
+            var firstSceneIsSet = !string.IsNullOrEmpty(_firstScene.stringValue);
             if (buildIndexInCorrect && firstSceneIsSet && buttonIsSet) return;
-
+            #endif
+            
             var problems = new StringBuilder("Problems:\n");
             if (!buildIndexInCorrect) problems.AppendLine("- This scene should be the first scene in the build index");
+            #if ! GRUMPYBEAR_LEVELMANAGEMENT
             if (!firstSceneIsSet) problems.AppendLine("- First scene must be set");
+            #endif
             if (!buttonIsSet) problems.AppendLine("- Start button must be set");
             
             EditorGUILayout.HelpBox(problems.ToString(), MessageType.Error);
@@ -79,6 +95,7 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
                 EditorBuildSettings.scenes = editorBuildSettingsScenes.ToArray();
             }
 
+            #if ! GRUMPYBEAR_LEVELMANAGEMENT
             if (!firstSceneIsSet)
             {
                     
@@ -88,6 +105,7 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
                     _firstScene.stringValue = firstScene.name;
                 }
             }
+            #endif
 
             var button = FindObjectOfType<Button>();
             if (button != null) _startButton.objectReferenceValue = button;

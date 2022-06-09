@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using FMOD;
 using UnityEngine;
 using UnityEngine.Assertions;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
+#if GRUMPYBEAR_LEVELMANAGEMENT
+using Games.GrumpyBear.LevelManagement;
+#else
+using UnityEngine.SceneManagement;
+#endif
 
 namespace Games.GrumpyBear.FMOD.Utilities
 {
@@ -21,8 +26,13 @@ namespace Games.GrumpyBear.FMOD.Utilities
     [HelpURL("https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html")]
     public class WebGLInitializer : MonoBehaviour
     {
+        #if GRUMPYBEAR_LEVELMANAGEMENT
+        [Tooltip("Name of the first SceneGroup to load once FMOD has been initialized")]
+        [SerializeField] private SceneGroup _firstSceneGroup;
+        #else
         [Tooltip("Name of the first scene to load once FMOD has been initialized")]
         [SerializeField] private string _firstScene;
+        #endif
         
         [Tooltip("The Button which will provide the required explicit user interaction.")]
         [SerializeField] private Button _startButton;
@@ -40,8 +50,10 @@ namespace Games.GrumpyBear.FMOD.Utilities
 
         private IEnumerator Start()
         {
+            #if !GRUMPYBEAR_LEVELMANAGEMENT
             _asyncSceneLoading = SceneManager.LoadSceneAsync(_firstScene);
             _asyncSceneLoading.allowSceneActivation = false;
+            #endif
             
             while (FMODUnity.RuntimeManager.AnyBankLoading())
             {
@@ -59,7 +71,11 @@ namespace Games.GrumpyBear.FMOD.Utilities
             result = FMODUnity.RuntimeManager.CoreSystem.mixerResume();
             Assert.AreEqual(result, RESULT.OK);
             _volumePreferencesToInitialize.ForEach(v => v.Initialize());
+            #if GRUMPYBEAR_LEVELMANAGEMENT
+            _firstSceneGroup.Load();
+            #else
             _asyncSceneLoading.allowSceneActivation = true;
+            #endif
         }
 
         #if UNITY_EDITOR

@@ -2,7 +2,8 @@
     "name": "Games.GrumpyBear.FMOD.Utilities",
     "rootNamespace": "Games.GrumpyBear.FMOD.Utilities",
     "references": [
-        "GUID:0c752da273b17c547ae705acf0f2adf2"
+        "GUID:0c752da273b17c547ae705acf0f2adf2",
+        "GUID:dfaebc241068b1f48924ef85a19a0a8d"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -11,6 +12,12 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [],
+    "versionDefines": [
+        {
+            "name": "games.grumpybear.levelmanagement",
+            "expression": "0.0.1",
+            "define": "GRUMPYBEAR_LEVELMANAGEMENT"
+        }
+    ],
     "noEngineReferences": false
 }
