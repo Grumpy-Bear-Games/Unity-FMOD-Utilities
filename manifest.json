@@ -127,6 +127,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html",
+          "hash": "iNNND8uBPKLKu45iO9hXEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.UIElements.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.UIElements.html",
+          "hash": "2Dg8XWTNB70CuxIaTHS+zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference.yml",
       "output": {
         ".html": {
@@ -155,7 +179,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html",
-          "hash": "YotnIZyxNzFIxxawJNuOSg=="
+          "hash": "E2ERaU583F+nHauRLhwbmQ=="
         }
       },
       "is_incremental": false,
@@ -179,7 +203,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "72TmSVViZVKM16rOHrm7SQ=="
+          "hash": "eWpyLixJnUNBL5jzor/mkQ=="
         }
       },
       "is_incremental": false,
@@ -225,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/fmodevents.html",
-          "hash": "yxL+B3XEEEYpJYBjruy/Ow=="
+          "hash": "JDXwHrk02xe1zZ/NpYEnYw=="
         }
       },
       "is_incremental": false,
@@ -249,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/volumecontrol.html",
-          "hash": "BADEaKztjJseF6xZA0MRKg=="
+          "hash": "88A+vYXCezexakiW7ver6w=="
         }
       },
       "is_incremental": false,
@@ -261,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/webgl.html",
-          "hash": "t20xgVW+RqhgjEiruI62OA=="
+          "hash": "IzQ4oqgdXIymvWt/CdUYSw=="
         }
       },
       "is_incremental": false,
@@ -300,7 +324,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 11,
+          "total_file_count": 13,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

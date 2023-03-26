@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Using FMOD with WebGL | Games.GrumpyBear.FMOD.Utilities </title>
+    <title>Namespace Games.GrumpyBear.FMOD.Utilities.UIElements
+   | Games.GrumpyBear.FMOD.Utilities </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Using FMOD with WebGL | Games.GrumpyBear.FMOD.Utilities ">
+    <meta name="title" content="Namespace Games.GrumpyBear.FMOD.Utilities.UIElements
+   | Games.GrumpyBear.FMOD.Utilities ">
     <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -76,42 +78,20 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="manual.webgl.md">
-<h1 id="using-fmod-with-webgl">Using FMOD with WebGL</h1>
-
-<p>Using FMOD with WebGL has some special requirements and limitations.</p>
-<ol>
-<li>FMOD must be initialized through an action, which comes from direct user input, e.g. the user 
-clicking a button.</li>
-<li>All FMOD banks must be loaded before interacting with them.</li>
-<li>FMOD should be suspended and resumed on focus events to prevent audio glitches.</li>
-</ol>
-<p>See more details in <a href="https://alessandrofama.com/tutorials/fmod-unity/fix-blocked-audio-browsers/">Fix blocked FMOD audio in Browsers</a> and
-<a href="&quot;https://fmod.com/resources/documentation-unity?version=2.01&amp;page=examples-async-loading.html">Scripting Examples | Asynchronous Loading</a></p>
-<p>This package provides two classes for helping with implementing this right.</p>
-<h2 id="gamesgrumpybearfmodutilitieswebglinitializer"><a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html">WebGLInitializer</a></h2>
-<p><a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html">WebGLInitializer</a> handles initialization of FMOD and bank loading.</p>
-<p>Usage:</p>
-<ol>
-<li>Set <code>InitializeOnEnable</code> to <code>false</code> on all <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.VolumePreference.html">VolumePreference</a> instances in the editor. </li>
-<li>Create an empty scene with a camera, a canvas and a button. Give the button a label like &quot;Start Game&quot; or similar.</li>
-<li>Create a new GameObject with <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html">WebGLInitializer</a>.</li>
-<li>In the editor, configure <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html">WebGLInitializer</a>. This is easiest done by clicking the
-&quot;Fix All Problems&quot; button.</li>
-<li>(Optionally) Style and decorate the scene any way you want.</li>
-<li>Save this scene and make it the first scene in the <a href="https://docs.unity3d.com/Manual/BuildSettings.html">build settings</a>.</li>
-</ol>
-<p>When started, <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html">WebGLInitializer</a> will load the first scene asynchronously and wait for
-the FMOD banks to load. The button is kept hidden until both scene and FMOD banks are ready. When the player clicks the button,
-FMOD is initialized (thus fulfilling the requirement of direct under interaction), and switches to the real first scene.</p>
-<div class="IMPORTANT"><h5>Important</h5><p>Make sure to configure FMOD banks to load automatically under <code>Initialization -&gt; Load Banks</code> in the FMOD Settings (<code>FMOD -&gt; Edit Settings</code>)  </p>
-</div>
-<h2 id="gamesgrumpybearfmodutilitiesfocusmanager"><a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html">FocusManager</a></h2>
-<p>When a Unity application loses focus in WebGL, e.g. the user switches to a different tab, FMOD gets stuck playing the same sounds.
-<a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html">FocusManager</a> is class, which helps handle unfocus and focus events correctly by suspending and
-resuming FMOD. Simply add <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html">FocusManager</a> to a <a class="xref" href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a> in your active scene.</p>
-<div class="TIP"><h5>Tip</h5><p>It&#39;s recommended to keep the <a class="xref" href="../api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html">FocusManager</a> in a global scene, if you&#39;re using a multi-scene setup.</p>
-</div>
+            <article class="content wrap" id="_content" data-uid="Games.GrumpyBear.FMOD.Utilities.UIElements">
+  
+  <h1 id="Games_GrumpyBear_FMOD_Utilities_UIElements" data-uid="Games.GrumpyBear.FMOD.Utilities.UIElements" class="text-break">Namespace Games.GrumpyBear.FMOD.Utilities.UIElements
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html">VolumeSlider</a></h4>
+      <section><p>A slider VisualElement for building a volume control UI using UI Toolkit.
+Simply add this VisualElement to your visual tree and set the <a class="xref" href="Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html#Games_GrumpyBear_FMOD_Utilities_UIElements_VolumeSlider_VolumePreference">VolumePreference</a>
+property on startup </p>
+</section>
 </article>
           </div>
           
@@ -119,9 +99,6 @@ resuming FMOD. Simply add <a class="xref" href="../api/Games.GrumpyBear.FMOD.Uti
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/Grumpy-Bear-Games/Unity-FMOD-Utilities/blob/master/Documentation/manual/webgl.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

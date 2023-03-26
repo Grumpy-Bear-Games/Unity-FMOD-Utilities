@@ -158,6 +158,57 @@ references:
   commentId: T:Games.GrumpyBear.FMOD.Utilities.FocusManager
   fullName: Games.GrumpyBear.FMOD.Utilities.FocusManager
   nameWithType: FocusManager
+- uid: Games.GrumpyBear.FMOD.Utilities.UIElements
+  name: Games.GrumpyBear.FMOD.Utilities.UIElements
+  href: api/Games.GrumpyBear.FMOD.Utilities.UIElements.html
+  commentId: N:Games.GrumpyBear.FMOD.Utilities.UIElements
+  fullName: Games.GrumpyBear.FMOD.Utilities.UIElements
+  nameWithType: Games.GrumpyBear.FMOD.Utilities.UIElements
+- uid: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider
+  name: VolumeSlider
+  href: api/Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html
+  commentId: T:Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider
+  fullName: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider
+  nameWithType: VolumeSlider
+- uid: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.#ctor
+  name: VolumeSlider()
+  href: api/Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html#Games_GrumpyBear_FMOD_Utilities_UIElements_VolumeSlider__ctor
+  commentId: M:Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.#ctor
+  fullName: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.VolumeSlider()
+  nameWithType: VolumeSlider.VolumeSlider()
+- uid: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.#ctor*
+  name: VolumeSlider
+  href: api/Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html#Games_GrumpyBear_FMOD_Utilities_UIElements_VolumeSlider__ctor_
+  commentId: Overload:Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.#ctor
+  isSpec: "True"
+  fullName: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.VolumeSlider
+  nameWithType: VolumeSlider.VolumeSlider
+- uid: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.UpdateUI
+  name: UpdateUI()
+  href: api/Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html#Games_GrumpyBear_FMOD_Utilities_UIElements_VolumeSlider_UpdateUI
+  commentId: M:Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.UpdateUI
+  fullName: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.UpdateUI()
+  nameWithType: VolumeSlider.UpdateUI()
+- uid: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.UpdateUI*
+  name: UpdateUI
+  href: api/Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html#Games_GrumpyBear_FMOD_Utilities_UIElements_VolumeSlider_UpdateUI_
+  commentId: Overload:Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.UpdateUI
+  isSpec: "True"
+  fullName: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.UpdateUI
+  nameWithType: VolumeSlider.UpdateUI
+- uid: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.VolumePreference
+  name: VolumePreference
+  href: api/Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html#Games_GrumpyBear_FMOD_Utilities_UIElements_VolumeSlider_VolumePreference
+  commentId: P:Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.VolumePreference
+  fullName: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.VolumePreference
+  nameWithType: VolumeSlider.VolumePreference
+- uid: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.VolumePreference*
+  name: VolumePreference
+  href: api/Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html#Games_GrumpyBear_FMOD_Utilities_UIElements_VolumeSlider_VolumePreference_
+  commentId: Overload:Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.VolumePreference
+  isSpec: "True"
+  fullName: Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.VolumePreference
+  nameWithType: VolumeSlider.VolumePreference
 - uid: Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference
   name: VCAVolumePreference
   href: api/Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference.html
@@ -293,6 +344,19 @@ references:
   commentId: T:Games.GrumpyBear.FMOD.Utilities.WebGLInitializer
   fullName: Games.GrumpyBear.FMOD.Utilities.WebGLInitializer
   nameWithType: WebGLInitializer
+- uid: Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.ResetVolumePreferences
+  name: ResetVolumePreferences()
+  href: api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html#Games_GrumpyBear_FMOD_Utilities_WebGLInitializer_ResetVolumePreferences
+  commentId: M:Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.ResetVolumePreferences
+  fullName: Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.ResetVolumePreferences()
+  nameWithType: WebGLInitializer.ResetVolumePreferences()
+- uid: Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.ResetVolumePreferences*
+  name: ResetVolumePreferences
+  href: api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html#Games_GrumpyBear_FMOD_Utilities_WebGLInitializer_ResetVolumePreferences_
+  commentId: Overload:Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.ResetVolumePreferences
+  isSpec: "True"
+  fullName: Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.ResetVolumePreferences
+  nameWithType: WebGLInitializer.ResetVolumePreferences
 - uid: manual.fmodevents.md
   name: Playing FMOD one-shot events
   href: manual/fmodevents.html
