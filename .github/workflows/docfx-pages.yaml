@@ -1,29 +1,47 @@
 ﻿name: Build and publish documentation
+
 on:
   push:
     branches:
       - master
+
 jobs:
   DocFX:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v2
-      - uses: nikeee/docfx-action@v1.0.0
-        name: Check DocFX version
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Cache
+      - uses: actions/cache@v3
         with:
-          args: --version
-      - uses: nikeee/docfx-action@v1.0.0
-        name: Build Documentation
+          path: Library
+          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-
+
+      - name: Generate .csproj files
+        uses: game-ci/unity-builder@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          args: Documentation~/docfx.json
+          buildMethod: Packages.Rider.Editor.RiderScriptEditor.SyncSolution
+
+      - name: Build Documentation
+        uses: nikeee/docfx-action@v1.0.0
+        with:
+          args: Documentation/docfx.json
+
       - name: List files in the repository
         run: |
-          ls -R ${{ github.workspace }}/_site~
+          ls -R ${{ github.workspace }}/_site
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ${{ github.workspace }}/_site~
+          publish_dir: ${{ github.workspace }}/_site
           user_name: 'github-actions[bot]'
           user_email: 'parmus@gmail.com'

@@ -1,0 +1,10 @@
+- name: Manual
+  href: manual/
+- name: Scripting API
+  href: api/
+- name: Changelog
+  homepage: ../Packages/games.grumpybear.fmod.utilities/CHANGELOG.md
+- name: License
+  homepage: ../Packages/games.grumpybear.fmod.utilities/LICENSE.md
+- name: GitHub
+  homepage: https://github.com/Grumpy-Bear-Games/Unity-FMOD-Utilities
