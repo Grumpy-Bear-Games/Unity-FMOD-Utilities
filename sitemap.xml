@@ -2,109 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/changelog/CHANGELOG.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/license/LICENSE.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.BusVolumePreference.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.Editor.BusVolumePreferenceEditor.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.Editor.VCAVolumePreferenceEditor.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.Editor.WebGLInitializerEditor.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.Editor.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.FMODEvent.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.FocusManager.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.VolumePreference.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.VolumePreferenceSlider.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/index.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/manual/fmodevents.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/manual/volumecontrol.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/manual/webgl.html</loc>
-    <lastmod>2023-03-26T03:55:38+00:00</lastmod>
+    <lastmod>2023-03-26T04:47:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
