@@ -1,0 +1,3 @@
+﻿apiRules:
+  - exclude:
+      uidRegex: ^Games\.GrumpyBear\.FMOD\.Utilities\.UIElements\.VolumeSlider\.Uxml

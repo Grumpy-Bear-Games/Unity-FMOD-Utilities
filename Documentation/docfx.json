@@ -11,7 +11,12 @@
       ],
       "dest": "api",
       "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "disableDefaultFilter": false,
+      "filter": "filter.yaml",
+      "properties": {
+        "Configuration": "Debug",
+        "Platform" : "AnyCPU"
+      }
     }
   ],
   "build": {

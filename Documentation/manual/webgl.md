@@ -21,7 +21,7 @@ This package provides two classes for helping with implementing this right.
 @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer" handles initialization of FMOD and bank loading.
 
 Usage:
-1. Set `niItializeOnEnable` to `false` on all @"Games.GrumpyBear.FMOD.Utilities.VolumePreference" instances in the editor. 
+1. Set `InitializeOnEnable` to `false` on all @"Games.GrumpyBear.FMOD.Utilities.VolumePreference" instances in the editor. 
 2. Create an empty scene with a camera, a canvas and a button. Give the button a label like "Start Game" or similar.
 3. Create a new GameObject with @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer".
 4. In the editor, configure @"Games.GrumpyBear.FMOD.Utilities.WebGLInitializer". This is easiest done by clicking the
@@ -40,7 +40,7 @@ FMOD is initialized (thus fulfilling the requirement of direct under interaction
 
 When a Unity application loses focus in WebGL, e.g. the user switches to a different tab, FMOD gets stuck playing the same sounds.
 @"Games.GrumpyBear.FMOD.Utilities.FocusManager" is class, which helps handle unfocus and focus events correctly by suspending and
-resuming FMOD. Simply add @"Games.GrumpyBear.FMOD.Utilities.FocusManager" to a GameObject in your active scene.
+resuming FMOD. Simply add @"Games.GrumpyBear.FMOD.Utilities.FocusManager" to a @"UnityEngine.GameObject" in your active scene.
 
 > [!TIP]
 > It's recommended to keep the @"Games.GrumpyBear.FMOD.Utilities.FocusManager" in a global scene, if you're using a multi-scene setup.
