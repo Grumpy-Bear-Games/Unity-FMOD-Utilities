@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Root" style="width: 100%; height: 100%; align-items: center; justify-content: center;">
+        <ui:VisualElement name="Frame" style="width: 60%; height: 60%; background-color: rgba(255, 255, 255, 0.39); border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; align-items: center;">
+            <ui:Label tabindex="-1" text="Example Option Dialog" display-tooltip-when-elided="false" name="Header" style="font-size: 48px; color: rgba(0, 0, 0, 255); -unity-text-align: upper-center;" />
+            <ui:VisualElement name="Sliders" style="flex-grow: 1; width: 60%; justify-content: center;">
+                <Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider name="BusVolume" label="Master (Bus)" style="font-size: 16px; margin-top: 20px; margin-bottom: 20px;" />
+                <Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider name="VCAVolume" label="SFX (VCA)" style="font-size: 16px; margin-left: 0; margin-right: 0; margin-top: 20px; margin-bottom: 20px;" />
+            </ui:VisualElement>
+            <ui:Button text="Test SFX" display-tooltip-when-elided="true" name="TestSFXButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
