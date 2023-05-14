@@ -47,7 +47,7 @@
   "api/Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html": {
     "href": "api/Games.GrumpyBear.FMOD.Utilities.UIElements.VolumeSlider.html",
     "title": "Class VolumeSlider | Games.GrumpyBear.FMOD.Utilities",
-    "keywords": "Class VolumeSlider A slider VisualElement for building a volume control UI using UI Toolkit. Simply add this VisualElement to your visual tree and set the VolumePreference property on startup Inheritance Object VolumeSlider Namespace : Games.GrumpyBear.FMOD.Utilities.UIElements Assembly : Games.GrumpyBear.FMOD.Utilities.dll Syntax public class VolumeSlider : VisualElement Constructors | Improve this Doc View Source VolumeSlider() Declaration public VolumeSlider() Properties | Improve this Doc View Source VolumePreference Get or set the VolumePreference bound to this slider. Declaration public VolumePreference VolumePreference { get; set; } Property Value Type Description VolumePreference Methods | Improve this Doc View Source UpdateUI() Forcefully update the slider to match the current value from the bound VolumePreference Normally, you shouldn't have to call this function at all. This is only useful if you have updated the bound VolumePreference manually. Declaration public void UpdateUI()"
+    "keywords": "Class VolumeSlider A slider VisualElement for building a volume control UI using UI Toolkit. Simply add this VisualElement to your visual tree and set the VolumePreference property on startup Inheritance Object VolumeSlider Namespace : Games.GrumpyBear.FMOD.Utilities.UIElements Assembly : Games.GrumpyBear.FMOD.Utilities.dll Syntax public class VolumeSlider : Slider Constructors | Improve this Doc View Source VolumeSlider() Declaration public VolumeSlider() Properties | Improve this Doc View Source VolumePreference Get or set the VolumePreference bound to this slider. Declaration public VolumePreference VolumePreference { get; set; } Property Value Type Description VolumePreference Methods | Improve this Doc View Source UpdateUI() Forcefully update the slider to match the current value from the bound VolumePreference Normally, you shouldn't have to call this function at all. This is only useful if you have updated the bound VolumePreference manually. Declaration public void UpdateUI()"
   },
   "api/Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference.html": {
     "href": "api/Games.GrumpyBear.FMOD.Utilities.VCAVolumePreference.html",
@@ -67,7 +67,7 @@
   "changelog/CHANGELOG.html": {
     "href": "changelog/CHANGELOG.html",
     "title": "Changelog | Games.GrumpyBear.FMOD.Utilities",
-    "keywords": "Changelog 0.1.0 This release brings almost no changes and is more about me restructuring the repository and how I release changes. This setup was heavily inspired by https://github.com/ibrahimpenekli/GameToolkit-Localization Keep Unity project for development in repo, but extract package to separate branch/tag on commit Drop support for Unity IMGUI 0.0.1 Initial release"
+    "keywords": "Changelog 0.1.1 [VolumeSlider] Get rid of wrapping VisualElement Fix broken sample 0.1.0 This release brings almost no changes and is more about me restructuring the repository and how I release changes. This setup was heavily inspired by https://github.com/ibrahimpenekli/GameToolkit-Localization Keep Unity project for development in repo, but extract package to separate branch/tag on commit Drop support for Unity IMGUI 0.0.1 Initial release"
   },
   "index.html": {
     "href": "index.html",
