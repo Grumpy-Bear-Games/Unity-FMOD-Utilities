@@ -9,11 +9,11 @@ namespace Games.GrumpyBear.FMOD.Utilities.UIElements
     /// Simply add this VisualElement to your visual tree and set the <see cref="VolumeSlider.VolumePreference"/>
     /// property on startup 
     /// </summary>
-    public class VolumeSlider : VisualElement
+    public class VolumeSlider : Slider
     {
         public new class UxmlFactory : UxmlFactory<VolumeSlider, UxmlTraits> { }
 
-        public new class UxmlTraits : VisualElement.UxmlTraits
+        public new class UxmlTraits : Slider.UxmlTraits
         {
             private readonly UxmlStringAttributeDescription labelAttr = new()
             {
@@ -24,20 +24,11 @@ namespace Games.GrumpyBear.FMOD.Utilities.UIElements
             {
                 base.Init(ve, bag, cc);
 
-                var volumeSlider = (ve as VolumeSlider); 
-                
+                if (ve is not VolumeSlider volumeSlider) return; 
                 volumeSlider.label = labelAttr.GetValueFromBag(bag, cc);
             }
         };
 
-        private string label
-        {
-            get => _slider.label;
-            set => _slider.label = value;
-        }
-
-
-        private readonly Slider _slider;
         private VolumePreference _volumePreference;
         
         /// <summary>
@@ -63,15 +54,16 @@ namespace Games.GrumpyBear.FMOD.Utilities.UIElements
         /// </summary>
         public void UpdateUI()
         {
-            _slider.SetValueWithoutNotify(_volumePreference != null ? _volumePreference.Volume : _slider.lowValue);
+            SetValueWithoutNotify(_volumePreference != null ? _volumePreference.Volume : lowValue);
         }
 
         public VolumeSlider()
         {
-            _slider = new Slider() { lowValue = 0, highValue = 1 };
-            _slider.RegisterValueChangedCallback(SetVolume);
-            _slider.RegisterCallback<GeometryChangedEvent>(UpdateOnShow);
-            hierarchy.Add(_slider);
+            lowValue = 0;
+            highValue = 1;
+            this.RegisterValueChangedCallback(SetVolume);
+            RegisterCallback<GeometryChangedEvent>(UpdateOnShow);
+            //hierarchy.Add(_slider);
         }
         
         private void UpdateOnShow(GeometryChangedEvent evt)
