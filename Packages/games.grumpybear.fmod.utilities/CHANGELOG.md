@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.1.2
+- Fix integration with Scene Groups from Games.GrumpyBear.Core
+
 ### 0.1.1
 - [VolumeSlider] Get rid of wrapping VisualElement
 - Fix broken sample

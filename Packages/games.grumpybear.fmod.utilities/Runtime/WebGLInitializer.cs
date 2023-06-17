@@ -5,8 +5,8 @@ using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.UI;
 
-#if GRUMPYBEAR_LEVELMANAGEMENT
-using Games.GrumpyBear.LevelManagement;
+#if GRUMPYBEAR_CORE
+using Games.GrumpyBear.Core.LevelManagement;
 #else
 using UnityEngine.SceneManagement;
 #endif
@@ -26,7 +26,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
     [HelpURL("https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/api/Games.GrumpyBear.FMOD.Utilities.WebGLInitializer.html")]
     public class WebGLInitializer : MonoBehaviour
     {
-        #if GRUMPYBEAR_LEVELMANAGEMENT
+        #if GRUMPYBEAR_CORE
         [Tooltip("Name of the first SceneGroup to load once FMOD has been initialized")]
         [SerializeField] private SceneGroup _firstSceneGroup;
         #else
@@ -38,7 +38,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
         [SerializeField] private Button _startButton;
         
         [Tooltip("VolumePreference instances to initialize once FMOD is ready.")]
-        [SerializeField] private List<VolumePreference> _volumePreferencesToInitialize = new List<VolumePreference>();
+        [SerializeField] private List<VolumePreference> _volumePreferencesToInitialize = new();
         
         private AsyncOperation _asyncSceneLoading;
 
@@ -50,7 +50,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
 
         private IEnumerator Start()
         {
-            #if !GRUMPYBEAR_LEVELMANAGEMENT
+            #if !GRUMPYBEAR_CORE
             _asyncSceneLoading = SceneManager.LoadSceneAsync(_firstScene);
             _asyncSceneLoading.allowSceneActivation = false;
             #endif
@@ -71,7 +71,7 @@ namespace Games.GrumpyBear.FMOD.Utilities
             result = FMODUnity.RuntimeManager.CoreSystem.mixerResume();
             Assert.AreEqual(result, RESULT.OK);
             _volumePreferencesToInitialize.ForEach(v => v.Initialize());
-            #if GRUMPYBEAR_LEVELMANAGEMENT
+            #if GRUMPYBEAR_CORE
             _firstSceneGroup.Load();
             #else
             _asyncSceneLoading.allowSceneActivation = true;

@@ -4,10 +4,11 @@
     "references": [
         "GUID:0c752da273b17c547ae705acf0f2adf2",
         "GUID:aab3caaf43456d6449a3e035348ff798",
-        "GUID:995a602722e56f8469a270933eb97950",
-        "GUID:dfaebc241068b1f48924ef85a19a0a8d"
+        "GUID:9fbfd4d111112414bb259b5aa2cf32f8",
+        "GUID:995a602722e56f8469a270933eb97950"
     ],
     "includePlatforms": [
+        "Android",
         "Editor"
     ],
     "excludePlatforms": [],
@@ -18,9 +19,9 @@
     "defineConstraints": [],
     "versionDefines": [
         {
-            "name": "games.grumpybear.levelmanagement",
+            "name": "games.grumpybear.core",
             "expression": "0.0.1",
-            "define": "GRUMPYBEAR_LEVELMANAGEMENT"
+            "define": "GRUMPYBEAR_CORE"
         }
     ],
     "noEngineReferences": false

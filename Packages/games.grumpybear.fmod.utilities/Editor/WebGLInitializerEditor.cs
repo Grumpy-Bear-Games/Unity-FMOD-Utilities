@@ -5,7 +5,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
-#if ! GRUMPYBEAR_LEVELMANAGEMENT
+#if ! GRUMPYBEAR_CORE
 using UnityEngine.SceneManagement;
 #endif
 
@@ -15,7 +15,7 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
     public class WebGLInitializerEditor : UnityEditor.Editor
     {
         private WebGLInitializer _webGLInitializer;
-        #if GRUMPYBEAR_LEVELMANAGEMENT
+        #if GRUMPYBEAR_CORE
         private SerializedProperty _firstSceneGroup;
         #else
         private SerializedProperty _firstScene;
@@ -25,7 +25,7 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
         private void OnEnable()
         {
             _webGLInitializer = target as WebGLInitializer;
-            #if GRUMPYBEAR_LEVELMANAGEMENT
+            #if GRUMPYBEAR_CORE
             _firstSceneGroup = serializedObject.FindProperty("_firstSceneGroup");
             #else
             _firstScene = serializedObject.FindProperty("_firstScene");
@@ -53,7 +53,7 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
 
             var buildIndexInCorrect = scene.buildIndex == 0;
             var buttonIsSet = _startButton.objectReferenceValue != null;
-            #if GRUMPYBEAR_LEVELMANAGEMENT
+            #if GRUMPYBEAR_CORE
             if (buildIndexInCorrect && buttonIsSet) return;
             #else
             var firstSceneIsSet = !string.IsNullOrEmpty(_firstScene.stringValue);
@@ -62,7 +62,7 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
             
             var problems = new StringBuilder("Problems:\n");
             if (!buildIndexInCorrect) problems.AppendLine("- This scene should be the first scene in the build index");
-            #if ! GRUMPYBEAR_LEVELMANAGEMENT
+            #if ! GRUMPYBEAR_CORE
             if (!firstSceneIsSet) problems.AppendLine("- First scene must be set");
             #endif
             if (!buttonIsSet) problems.AppendLine("- Start button must be set");
@@ -95,7 +95,7 @@ namespace Games.GrumpyBear.FMOD.Utilities.Editor
                 EditorBuildSettings.scenes = editorBuildSettingsScenes.ToArray();
             }
 
-            #if ! GRUMPYBEAR_LEVELMANAGEMENT
+            #if ! GRUMPYBEAR_CORE
             if (!firstSceneIsSet)
             {
                     
