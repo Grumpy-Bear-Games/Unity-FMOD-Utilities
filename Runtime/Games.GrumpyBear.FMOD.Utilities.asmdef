@@ -1,0 +1,23 @@
+{
+    "name": "Games.GrumpyBear.FMOD.Utilities",
+    "rootNamespace": "Games.GrumpyBear.FMOD.Utilities",
+    "references": [
+        "GUID:0c752da273b17c547ae705acf0f2adf2",
+        "GUID:9fbfd4d111112414bb259b5aa2cf32f8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "games.grumpybear.core",
+            "expression": "0.0.1",
+            "define": "GRUMPYBEAR_CORE"
+        }
+    ],
+    "noEngineReferences": false
+}

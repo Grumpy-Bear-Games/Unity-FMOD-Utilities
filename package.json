@@ -1,0 +1,32 @@
+{
+  "name": "games.grumpybear.fmod.utilities",
+  "version": "0.1.2",
+  "displayName": "FMOD Utilities",
+  "description": "Utilities for integrating FMOD",
+  "unity": "2022.2",
+  "unityRelease": "11f1",
+  "license": "Apache-2.0",
+  "licensesUrl": "https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/license/LICENSE.html",
+  "documentationUrl": "https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/",
+  "changelogUrl": "https://grumpy-bear-games.github.io/Unity-FMOD-Utilities/changelog/CHANGELOG.html",
+  "repository": {
+    "url": "https://github.com/Grumpy-Bear-Games/Unity-FMOD-Utilities.git",
+    "type": "git"
+  },
+  "samples": [
+    {
+      "displayName": "Example Options Dialog",
+      "description": "Demonstrates how to hook up a VCAVolume to a UI Slider",
+      "path": "Samples~/Example options Dialog"
+    }
+  ],
+  "hideInEditor": false,
+  "keywords": [
+    "audio",
+    "fmod"    
+  ],
+  "author": {
+    "name": "Martin Parm",
+    "email": "parmus@gmail.com"
+  }
+}
